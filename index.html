@@ -112,8 +112,8 @@
     position: fixed;
     z-index: 0;
     left: 30%;
-    top: 22.5%;
-    width:43%;
+    top: 20%;
+    width:50%;
     height: auto;
     overflow: hidden;
 }
@@ -129,15 +129,20 @@
     overflow:hidden;
 }
 
+body.modal-open {
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease; 
+}
+
 .close {
     position: absolute;
-    top: -25px;
-    right:0px;
-    color: rgb(254, 254, 254);
+    top:-18px;
+    right:2px;
+    color: beige;
     font-size:40px;
-    background-color: rgb(195, 36, 7);
-    font-weight: bold;
-    height:48px;
+    font-weight:700;
+    height:29px;
     transition: color 0.3s ease;
     cursor: pointer;
     z-index: 11;
@@ -145,7 +150,7 @@
 
 .close:hover,
 .close:focus {
-    color: #180b0b;
+    color: tomato;
 }
 
 @keyframes emergeLogo {
@@ -165,42 +170,46 @@
   transform: translate(-50%, -50%);
   border-radius: 5px;
 }
-
+.logo{
+    position: relative;
+    top:9px;
+    margin: 0;
+    padding: 0;
+}
 
     </style>
     
 </head>
-<body>
-    <header class="bg-neutral-100 flex justify-around items-center  w-full"> 
+<body> 
+    <header class="bg-white flex justify-start items-center  w-full"> 
         <div class="flex items-center "> <!-- Contenedor izquierdo -->
-            <img src="logo.png" class="logo max-sm:w-32  h-auto"></img><!-- Logo -->
-            
-        </div>
-        <h2 class="text-green-600 lg:hidden font-semibold ">Agricola del Norte S.A.</h2><!-- Título -->
-        <nav class="flex items-center" ><!-- Contenedor derecho -->
-            <div class="lg:hidden  ">
-                <img src="bx-menu-alt-right.png" class="border border-black bg-white-600  my-4 rounded-lg ">
-            </div>
-        
-            <ul class="max-md:hidden sm:hidden lg:flex mr-24 text-green-500 font-semibold">
-                <li class="mr-10 "><a href="#inicio"  class="hover:text-green-700" >Inicio</a></li>
-                <li class="mr-10"><a href="#nuestra-empresa.html" class="hover:text-green-700" >Nuestra Empresa</a></li>
-                <li class="mr-10"><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li>
-                <li class="mr-10"><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li>
-                <li class="mr-10"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li>
-                <li class="mr-10"><a href="#disposiciones.html" class="hover:text-green-700" >Disposiciones</a></li>
-            </ul>
-            
-            <div class=" 4 flex flex-rows space-x-2" >
-            <a 
-        href="https://web.facebook.com/agricoladelnortesa" 
-        target="_blank" class="text-xl text-blue-500 hover:text-blue-700 sm:hidden max-md:hidden lg:block  " ><i class="fab fa-facebook "></i></a>
-        <a href="mailto:agronort@gmail.com" class="text-xl hover:text-red-700 text-red-500 sm:hidden max-md:hidden lg:block  " ><i class="fas fa-envelope  "></i>
-        </a>
-        
+            <img src="logo.png" class="logo max-sm:w-40 h-auto"></img><!-- Logo -->
+        </div>      
+        <h2 class="text-green-600 lg:hidden font-semibold  sm:text-3xl max-md:text-xl  w-full ">Agricola del Norte S.A.</h2><!-- Título -->        
+        <div class="flex flex-col">
+            <h1 class="w-full mb-0 text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
+<nav class=" w-full mt-6 flex  items-center  " >
+    <div class="lg:hidden  ">
+        <img src="bx-menu-alt-right.png" class="border border-black bg-white-600  my-4 rounded-lg max-md:ml-0 max-md:mt-0 sm:ml-56">
+    </div>
+    <ul class="max-md:hidden sm:hidden lg:flex mr-0 ml-0 text-green-500 font-semibold">
+        <li class="mr-10 "><a href="#inicio"  class="hover:text-green-700" >Inicio</a></li>
+        <li class="mr-10"><a href="#nuestra-empresa.html" class="hover:text-green-700" >Nuestra Empresa</a></li>
+        <li class="mr-10"><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li>
+        <li class="mr-10"><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li>
+        <li class="mr-10"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li>
+        <li class="mr-10"><a href="#disposiciones.html" class="hover:text-green-700" >Disposiciones</a></li>
+    </ul>
+    <div class="flex flex-rows ml-20  " >
+        <a 
+    href="https://web.facebook.com/agricoladelnortesa" 
+    target="_blank" class="text-xl text-blue-500 hover:text-blue-700 sm:hidden max-md:hidden lg:block  " ><i class=" ml-8 fab fa-facebook mr-4"></i></a>
+    <a href="mailto:agronort@gmail.com" class="text-xl hover:text-red-700 text-red-500 sm:hidden max-md:hidden lg:block  " ><i class="fas fa-envelope  "></i>
+    </a>
     </div>    
-    </nav>
-        
+</nav>  
+</div>
+
     </header>
     <main >
         <section >
@@ -260,10 +269,9 @@
 <footer class="bg-green-950 text-white ">
     <div class="flex lg:flex-row flex-wrap items-center justify-center p-4 ">
     <div class=" text-center sm:mb-8 max-md:mb-8 lg:mt-8">
-        <h2 class="text-xl">Horario de atención:</h2>
-        <p>Lunes a Viernes:</p>
-        <p>Mañana de 08:30 a 14:00</p>
-        <p>Tarde de 15:00 a 18:30</p>
+        <h2 class="text-lg">Horario de atención:</h2>
+        <p>Lunes a Domingo:</p>
+        <p>Mañana/tarde de 07:00 a 18:00</p>
         <p>VENTAS: 58-2-220525 </p>
         <p>Av. Manuel Castillo Ibaceta #3689 - Arica</p>
     </div>

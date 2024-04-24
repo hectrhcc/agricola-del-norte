@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => { //para que funcionen los a
     imagenes.forEach(imagen =>{
         imagen.addEventListener('click', ()=>{
             modal.style.display = 'block'; 
+            modal.style.zIndex= '11';
             modalImg.src = imagen.src; 
             imagen.style.zIndex = '10';
-            modal.style.zIndex= '11';
             document.body.classList.add('modal-open'); 
         })
     })
