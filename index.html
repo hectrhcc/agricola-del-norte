@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Agricola del Norte</title>
+    <style>
+         @media (min-width:320px) { 
+        .carousel{
+            height:218px;
+        }
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width:100%;
+            height:100%;
+            position: relative;
+            transition: transform 0.5s ease-in-out;
+        }
+    
+       
+        .carousel-inner {
+            display: flex;
+            animation: carousel-animation 18s infinite;
+        }
+        
+        .carousel-item {
+            width: 100%;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+    
+        @keyframes carousel-animation {
+            0% {
+                transform: translateX(0);
+                transition: transform 1.5s ease-in-out;
+            }
+            16.666% {
+                transform: translateX(0);
+                transition: transform 1.5s ease-in-out;
+            }
+            20% {
+                transform: translateX(-100%);
+                transition: transform 1.5s ease-in-out;
+            }
+            36.666% {
+                transform: translateX(-100%);
+                transition: transform 1.5s ease-in-out;
+            }
+            40% {
+                transform: translateX(-200%);
+                transition: transform 1.5s ease-in-out;
+            }
+            56.666% {
+                transform: translateX(-200%);
+                transition: transform 1.5s ease-in-out;
+            }
+            60% {
+                transform: translateX(-300%);
+                transition: transform 1.5s ease-in-out;
+            }
+            76.666% {
+                transform: translateX(-300%);
+                transition: transform 1.5s ease-in-out;
+            }
+            80% { 
+    transform: translateX(-400%);
+    transition: transform 1.5s ease-in-out;
+  }
+
+  95% {
+    transform: translateX(-400%);
+    transition: transform 1.5s ease-in-out;
+  }
+
+  100% {
+    transform: translateX(-500%);
+    transition: transform 1.5s ease-in-out;
+  }
+        }
+
+        .gallery{
+	background: #f2f2f2;
+}
+
+.contenedor-galeria{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.img-galeria{
+	object-fit: cover; 
+	width:30%;
+	display: block;
+	margin-bottom: 15px;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	cursor:pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* El modal está oculto por defecto */
+    position: fixed;
+    z-index: 0;
+    left: 30%;
+    top: 22.5%;
+    width:43%;
+    height: auto;
+    overflow: hidden;
+}
+
+.modal-content {
+    display: block;
+    position: relative;
+    top:0px;
+    margin: auto;
+    max-width: 100%; /* Tamaño máximo de la imagen */
+    max-height: 100%; /* Altura máxima de la imagen */
+    z-index:10;
+    overflow:hidden;
+}
+
+.close {
+    position: absolute;
+    top: -25px;
+    right:0px;
+    color: rgb(254, 254, 254);
+    font-size:40px;
+    background-color: rgb(195, 36, 7);
+    font-weight: bold;
+    height:48px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.close:hover,
+.close:focus {
+    color: #180b0b;
+}
+
+@keyframes emergeLogo {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.textos {
+  position: absolute;
+  top:30%;
+  left: 50%;
+  background-color: rgba(5, 46, 22, 0.5);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <header class="bg-neutral-100 flex justify-around items-center  w-full"> 
+        <div class="flex items-center "> <!-- Contenedor izquierdo -->
+            <img src="logo.png" class="logo max-sm:w-32  h-auto"></img><!-- Logo -->
+            
+        </div>
+        <h2 class="text-green-600 lg:hidden font-semibold ">Agricola del Norte S.A.</h2><!-- Título -->
+        <nav class="flex items-center" ><!-- Contenedor derecho -->
+            <div class="lg:hidden  ">
+                <img src="bx-menu-alt-right.png" class="border border-black bg-white-600  my-4 rounded-lg ">
+            </div>
+        
+            <ul class="max-md:hidden sm:hidden lg:flex mr-24 text-green-500 font-semibold">
+                <li class="mr-10 "><a href="#inicio"  class="hover:text-green-700" >Inicio</a></li>
+                <li class="mr-10"><a href="#nuestra-empresa.html" class="hover:text-green-700" >Nuestra Empresa</a></li>
+                <li class="mr-10"><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li>
+                <li class="mr-10"><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li>
+                <li class="mr-10"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li>
+                <li class="mr-10"><a href="#disposiciones.html" class="hover:text-green-700" >Disposiciones</a></li>
+            </ul>
+            
+            <div class=" 4 flex flex-rows space-x-2" >
+            <a 
+        href="https://web.facebook.com/agricoladelnortesa" 
+        target="_blank" class="text-xl text-blue-500 hover:text-blue-700 sm:hidden max-md:hidden lg:block  " ><i class="fab fa-facebook "></i></a>
+        <a href="mailto:agronort@gmail.com" class="text-xl hover:text-red-700 text-red-500 sm:hidden max-md:hidden lg:block  " ><i class="fas fa-envelope  "></i>
+        </a>
+        
+    </div>    
+    </nav>
+        
+    </header>
+    <main >
+        <section >
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item ">
+                        <div class="textos ">
+                            <h2 class="lg:text-4xl max-md:text-lg sm:text-2xl font-bold text-white text-center mb-4">Le damos la bienvenida</h2>
+                            <p class="font-semibold  max-md:hidden text-lg text-white text-center mb-4  flex justify-center items-center underline">Consulte nuestros productos y servicios que tenemos para usted.</p>
+                            
+
+                          </div>
+                        
+                        
+                        <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
+                        
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="imagen2.jpg" alt="Slide 2" class="w-full min-h-full">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen3.jpg" alt="Slide 3" class="w-full min-h-full">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen4.jpg" alt="Slide 4" class="w-full min-h-full">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen5.jpg" alt="Slide 5" class="w-full min-h-full">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
+                    </div>
+                  
+                </div>
+            </div>
+          
+        </section>
+        <section class=gallery id="galeria">
+                    <!-- Modal para la imagen seleccionada -->
+<div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" src="">
+</div>
+            <div class="mx-auto pt-8 pb-6 overflow-y-hidden"> 
+                <div class="contenedor-galeria">
+                    <img src="imagen1.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <img src="imagen6.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <img src="imagen2.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <img src="imagen3.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <img src="imagen4.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <img src="imagen5.jpg" alt="" class="img-galeria" width="200" height="250">  
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-green-950 text-white ">
+    <div class="flex lg:flex-row flex-wrap items-center justify-center p-4 ">
+    <div class=" text-center sm:mb-8 max-md:mb-8 lg:mt-8">
+        <h2 class="text-xl">Horario de atención:</h2>
+        <p>Lunes a Viernes:</p>
+        <p>Mañana de 08:30 a 14:00</p>
+        <p>Tarde de 15:00 a 18:30</p>
+        <p>VENTAS: 58-2-220525 </p>
+        <p>Av. Manuel Castillo Ibaceta #3689 - Arica</p>
+    </div>
+    <div class="lg:mr-11 lg:ml-12 max-md:mb-8"> <div><img src="logo-texto.png" alt="logo con info de la empresa"></div> 
+    <div class="flex justify-center items-center "> 
+        <a 
+        href="https://web.facebook.com/agricoladelnortesa" 
+        target="_blank" class="text-xl text-blue-500 hover:text-blue-700" ><i class="fab fa-facebook mr-4 mt-4"></i></a>
+        <a href="tel:58-2-244485" class="text-xl hover:text-gray-700 text-gray-500"><i class="fas fa-mobile-alt mr-4  mt-4"></i></a>
+        <a href="mailto:agronort@gmail.com" class="text-xl  hover:text-red-700 text-red-500" ><i class="fas fa-envelope  mt-4"></i>
+        </a>
+    </div>
+    </div>
+    <div >
+        <ul class="sm:text-center sm:mt-8 md:mt-8 lg:text-justify lg:mt-0 max-md:text-center">
+            <li>
+        <a href="#inicio" class="hover:text-green-500 "><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#nuestraempresa" class="hover:text-green-500"><i class="fas fa-users "></i> Nuestra Empresa</a></li>
+        <li><a href="#objetivos" class="hover:text-green-500"><i class="fas fa-bullseye"></i> Objetivos</a></li>
+        <li><a href="#productosyservicios" class="hover:text-green-500"><i class="fas fa-shopping-bag"></i> Productos & Servicios</a></li>
+        <li><a href="#contacto" class="hover:text-green-500"><i class="fas fa-comment"></i>
+            Contacto</a></li>
+        <li><a href="#disposiciones" class="hover:text-green-500"><i class="fas fa-exclamation-triangle"></i> Disposiciones</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="text-center mt-1 pb-2 max-md:pb-6 sm:pb-8 ">Agricola del Norte S.A. Todos los derechos reservados.</div>    
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

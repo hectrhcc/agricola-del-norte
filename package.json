@@ -1,0 +1,14 @@
+{
+  "name": "agricoladelnorte",
+  "version": "1.0.0",
+  "description": "pagina de agricola del norte oficial",
+  "main": "\u001b[A\u001b[B\u001b[D",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hector contreras",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
