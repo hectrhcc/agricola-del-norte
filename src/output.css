@@ -580,6 +580,41 @@ video {
   margin-bottom: 0px;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-24 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.mx-32 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.mx-36 {
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.mx-\[-2\] {
+  margin-left: -2;
+  margin-right: -2;
+}
+
+.mx-\[-4\] {
+  margin-left: -4;
+  margin-right: -4;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -826,68 +861,72 @@ video {
     margin-bottom: 2rem;
   }
 
-  .max-md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .max-md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
   .max-md\:ml-12 {
     margin-left: 3rem;
   }
 
-  .max-md\:ml-14 {
-    margin-left: 3.5rem;
-  }
-
-  .max-md\:ml-16 {
-    margin-left: 4rem;
+  .max-md\:mt-0 {
+    margin-top: 0px;
   }
 
   .max-md\:ml-24 {
     margin-left: 6rem;
   }
 
-  .max-md\:ml-32 {
-    margin-left: 8rem;
-  }
-
-  .max-md\:ml-36 {
-    margin-left: 9rem;
-  }
-
   .max-md\:ml-8 {
     margin-left: 2rem;
   }
 
-  .max-md\:ml-4 {
-    margin-left: 1rem;
+  .max-md\:ml-2 {
+    margin-left: 0.5rem;
   }
 
   .max-md\:ml-1 {
     margin-left: 0.25rem;
   }
 
+  .max-md\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .max-md\:mr-8 {
+    margin-right: 2rem;
+  }
+
+  .max-md\:mr-\[-2\] {
+    margin-right: -2;
+  }
+
+  .max-md\:mr-\[-8\] {
+    margin-right: -8;
+  }
+
+  .max-md\:mr-\[-12\] {
+    margin-right: -12;
+  }
+
   .max-md\:hidden {
     display: none;
   }
 
-  .max-md\:w-12 {
-    width: 3rem;
+  .max-md\:w-6 {
+    width: 1.5rem;
   }
 
   .max-md\:w-8 {
     width: 2rem;
   }
 
-  .max-md\:w-4 {
-    width: 1rem;
+  .max-md\:w-10 {
+    width: 2.5rem;
   }
 
-  .max-md\:w-6 {
-    width: 1.5rem;
+  .max-md\:w-12 {
+    width: 3rem;
+  }
+
+  .max-md\:w-14 {
+    width: 3.5rem;
   }
 
   .max-md\:pb-6 {
@@ -898,19 +937,9 @@ video {
     text-align: center;
   }
 
-  .max-md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .max-md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .max-md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .max-md\:text-xl {
@@ -918,8 +947,9 @@ video {
     line-height: 1.75rem;
   }
 
-  .max-md\:font-semibold {
-    font-weight: 600;
+  .max-md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -944,8 +974,8 @@ video {
     width: 2rem;
   }
 
-  .sm\:w-10 {
-    width: 2.5rem;
+  .sm\:w-12 {
+    width: 3rem;
   }
 
   .sm\:pb-8 {
