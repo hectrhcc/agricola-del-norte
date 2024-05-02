@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => { //para que funcionen los alert
     const imagenes = document.querySelectorAll('.img-galeria')
     const modal = document.querySelector('.modal');
-    const modalImg = document.querySelector('.modal-content');
+    const modalImg = document.querySelector('.modal-content')
     const cerrar = document.querySelector('.close')
+    const despliguenav = document.querySelector('.hamburguesa')
+    const movil = document.querySelector('.movil')
 
-    
+despliguenav.addEventListener('click',()=>{
+    movil.style.display = 'block'; 
+    despliguenav.style.display = 'none'; 
+})
+
     imagenes.forEach(imagen =>{
         imagen.addEventListener('click', ()=>{
             modal.style.display = 'block'; 

@@ -15,7 +15,19 @@
         .carousel{
             height:218px;
         }
-        }
+        .movil{
+    background-color: beige;
+    z-index: 1;
+    position: absolute;
+    top:0px;
+    position: fixed;
+    right:0px;
+    height: 100%;
+    width:40%;
+    text-align: center;
+    line-height:6;
+}    
+    }
         .carousel {
             display: flex;
             overflow: hidden;
@@ -186,7 +198,27 @@ body.modal-open {
         .logo{
             top:4px;
         }
-        }
+       
+}
+
+@media (min-width:1024px){
+    .movil{
+    background-color: white;
+    z-index: 0;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    top:0px;
+    right:0px;
+    height:auto;
+    width:100%;
+    text-align: center;
+    line-height:1.1;
+}
+}
+
+
+
     </style>
     
 </head>
@@ -196,14 +228,14 @@ body.modal-open {
             <img src="logo.png" class="logo  top-0 h-auto"></img><!-- Logo -->
         </div>      
         <h2 class="text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-base  sm:text-3xl w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
-        <div class="lg:hidden max-md:ml-2">
+        <div class="lg:hidden max-md:ml-2 hamburguesa">
             <img src="bx-menu-alt-right.png"  class="boton border border-black bg-white-600  my-0  sm:w-12  max-md:w-12  rounded-lg ">
         </div>
         <div class="flex flex-col">
             <h1 class="w-full mb-0 text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
 <nav class=" w-full mt-6 flex  items-center  " >
 
-    <ul class="max-md:hidden sm:hidden lg:flex mr-0 ml-0 text-green-500 font-semibold">
+    <ul class="movil max-md:hidden sm:hidden lg:flex mr-0 ml-0 text-green-500 font-semibold max-md:flex-col sm:flex-col lg:flex-row">
         <li class="mr-10 "><a href="#inicio"  class="hover:text-green-700" >Inicio</a></li>
         <li class="mr-10"><a href="#nuestra-empresa.html" class="hover:text-green-700" >Nuestra Empresa</a></li>
         <li class="mr-10"><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li>
