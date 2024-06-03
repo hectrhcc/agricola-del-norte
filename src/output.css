@@ -566,8 +566,32 @@ video {
   position: relative;
 }
 
+.inset-2 {
+  inset: 0.5rem;
+}
+
+.inset-2\.5 {
+  inset: 0.625rem;
+}
+
+.inset-4 {
+  inset: 1rem;
+}
+
+.inset-6 {
+  inset: 1.5rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
 }
 
 .mx-auto {
@@ -838,6 +862,10 @@ video {
     width: 3rem;
   }
 
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
+
   .max-md\:pb-6 {
     padding-bottom: 1.5rem;
   }
@@ -872,6 +900,10 @@ video {
 
   .sm\:w-12 {
     width: 3rem;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:pb-8 {

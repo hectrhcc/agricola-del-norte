@@ -196,7 +196,14 @@ body.modal-open {
 
 @media (max-width:640px) { 
         .logo{
-            top:4px;
+            left:2.6rem;
+        }
+       
+}
+
+@media (min-width:767px) and (max-width:1100px) { 
+        .logo{    
+            left:8rem;
         }
        
 }
@@ -209,11 +216,12 @@ body.modal-open {
     display: flex;
     flex-direction: row;
     top:0px;
-    right:0px;
+    left:3rem;
     height:auto;
     width:100%;
     text-align: center;
     line-height:1.1;
+    
 }
 }
 
@@ -223,19 +231,19 @@ body.modal-open {
     
 </head>
 <body> 
-    <header class="bg-white flex justify-start items-center  w-full"> 
+    <header class="bg-white flex justify-center items-center  w-full"> 
         <div class="flex items-center"> <!-- Contenedor izquierdo -->
             <img src="logo.png" class="logo  top-0 h-auto"></img><!-- Logo -->
         </div>      
-        <h2 class="text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-base  sm:text-3xl w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
+        <h2 class="relative inset-6 text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-center  sm:text-3xl sm:text-center w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
         <div class="lg:hidden max-md:ml-2 hamburguesa">
             <img src="bx-menu-alt-right.png"  class="boton border border-black bg-white-600  my-0  sm:w-12  max-md:w-12  rounded-lg ">
         </div>
         <div class="flex flex-col">
-            <h1 class="w-full mb-0 text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
+            <h1 class="w-full mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
 <nav class=" w-full mt-6 flex  items-center  " >
 
-    <ul class="movil max-md:hidden sm:hidden lg:flex mr-0 ml-0 text-green-500 font-semibold max-md:flex-col sm:flex-col lg:flex-row">
+    <ul class="movil max-md:hidden sm:hidden  lg:flex mr-0 ml-0 text-green-500 font-semibold max-md:flex-col sm:flex-col lg:flex-row">
         <li class="mr-10 "><a href="#inicio"  class="hover:text-green-700" >Inicio</a></li>
         <li class="mr-10"><a href="#nuestra-empresa.html" class="hover:text-green-700" >Nuestra Empresa</a></li>
         <li class="mr-10"><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li>
@@ -243,16 +251,9 @@ body.modal-open {
         <li class="mr-10"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li>
         <li class="mr-10"><a href="#disposiciones.html" class="hover:text-green-700" >Disposiciones</a></li>
     </ul>
-    <div class="flex flex-rows ml-20  " >
-        <a 
-    href="https://web.facebook.com/agricoladelnortesa" 
-    target="_blank" class="text-xl text-blue-500 hover:text-blue-700 sm:hidden max-md:hidden lg:block  " ><i class=" ml-8 fab fa-facebook mr-4"></i></a>
-    <a href="mailto:agronort@gmail.com" class="text-xl hover:text-red-700 text-red-500 sm:hidden max-md:hidden lg:block  " ><i class="fas fa-envelope  "></i>
-    </a>
-    </div>    
+    
 </nav>  
 </div>
-
     </header>
     <main >
         <section >
