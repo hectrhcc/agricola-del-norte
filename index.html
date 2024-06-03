@@ -15,18 +15,11 @@
         .carousel{
             height:218px;
         }
-        .movil{
-    background-color: beige;
-    z-index: 1;
-    position: absolute;
-    top:0px;
-    position: fixed;
-    right:0px;
-    height: 100%;
-    width:40%;
-    text-align: center;
-    line-height:6;
-}    
+       
+.logo{
+    position: relative;
+    right:2rem;
+}
     }
         .carousel {
             display: flex;
@@ -183,6 +176,7 @@ body.modal-open {
   border-radius: 5px;
 }
 .logo{
+    z-index: 0;
     position: relative;
     top:8px;
     margin: 0;
@@ -198,6 +192,20 @@ body.modal-open {
         .logo{
             left:2.6rem;
         }
+        .movil{
+            font-size:42%;
+            
+            position:relative;
+            top:0px;
+            left:0%;
+            display: flex;
+            align-items: center;
+            height:1.8rem;
+            width:100%;
+            padding: 0;
+            text-align: center;
+            line-height:0.9;
+        }
        
 }
 
@@ -205,20 +213,30 @@ body.modal-open {
         .logo{    
             left:8rem;
         }
+        .movil{
+            font-size: small;
+            position:relative;
+            top:0px;
+            left:3%;
+            height:auto;
+            width:95%;
+            text-align: center;
+    
+        }
        
 }
 
 @media (min-width:1024px){
     .movil{
     background-color: white;
-    z-index: 0;
+    padding:0.4rem;
     position:relative;
     display: flex;
     flex-direction: row;
     top:0px;
-    left:3rem;
+    left:20%;
     height:auto;
-    width:100%;
+    width:66%;
     text-align: center;
     line-height:1.1;
     
@@ -230,32 +248,29 @@ body.modal-open {
     </style>
     
 </head>
-<body> 
+<body>  
     <header class="bg-white flex justify-center items-center  w-full"> 
         <div class="flex items-center"> <!-- Contenedor izquierdo -->
             <img src="logo.png" class="logo  top-0 h-auto"></img><!-- Logo -->
         </div>      
         <h2 class="relative inset-6 text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-center  sm:text-3xl sm:text-center w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
-        <div class="lg:hidden max-md:ml-2 hamburguesa">
-            <img src="bx-menu-alt-right.png"  class="boton border border-black bg-white-600  my-0  sm:w-12  max-md:w-12  rounded-lg ">
-        </div>
-        <div class="flex flex-col">
-            <h1 class="w-full mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
-<nav class=" w-full mt-6 flex  items-center  " >
-
-    <ul class="movil max-md:hidden sm:hidden  lg:flex mr-0 ml-0 text-green-500 font-semibold max-md:flex-col sm:flex-col lg:flex-row">
-        <li class="mr-10 "><a href="#inicio"  class="hover:text-green-700" >Inicio</a></li>
-        <li class="mr-10"><a href="#nuestra-empresa.html" class="hover:text-green-700" >Nuestra Empresa</a></li>
-        <li class="mr-10"><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li>
-        <li class="mr-10"><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li>
-        <li class="mr-10"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li>
-        <li class="mr-10"><a href="#disposiciones.html" class="hover:text-green-700" >Disposiciones</a></li>
-    </ul>
-    
-</nav>  
-</div>
+       
     </header>
     <main >
+        <div class="flex flex-col">
+            <h1 class="w-full mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
+<nav class=" w-full mt-1 flex  items-center  " >
+    <ul class="movil flex mr-0 ml-0 text-green-500 font-semibold flex-row ">
+        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-700 " >Inicio </a></li></div>
+        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#nuestra-empresa.html" class="hover:text-green-700" >Historia</a></li></div>
+        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li></div>
+        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li></div>
+        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li></div>
+        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#" class="hover:text-green-700" >Red Social</a></li></div>
+        <div ><li class="ml-5  mr-5 "><a href="#bodega.html" class="hover:text-green-700" >Bodega</a></li></div>
+    </ul>
+</nav>  
+</div>
         <section >
             <div class="carousel">
                 <div class="carousel-inner">
