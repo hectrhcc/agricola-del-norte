@@ -11,6 +11,30 @@
     <link href="./src/output.css" rel="stylesheet">
     <title>Agricola del Norte</title>
     <style>
+footer{
+    width:85%;
+    margin: 0 auto;
+}
+main{
+    width:85%;
+    margin: 0 auto;
+    border:3px solid green;
+}
+
+.entidades{
+    border:3px solid red;
+}
+
+.cliente{
+    width:70%;
+    border:3px solid blue;
+   
+}
+.carousel{
+    
+  
+}
+
          @media (min-width:320px) { 
         .carousel{
             height:218px;
@@ -97,8 +121,11 @@
 
 .contenedor-galeria{
 	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+	justify-content:space-around;
+	flex-wrap: nowrap;
+    position: relative;
+    right:0rem;
+    gap: 1rem;
 }
 
 .img-galeria{
@@ -162,7 +189,7 @@ body.modal-open {
     0% {
         transform: translateY(100%);
     }
-    100% {
+    100% {  
         transform: translateY(0);
     }
 }
@@ -175,6 +202,89 @@ body.modal-open {
   transform: translate(-50%, -50%);
   border-radius: 5px;
 }
+
+.titulos-galeria1{
+position:absolute;
+top:0rem;    
+left:0.8rem;
+width:8rem;
+height:3rem;
+align-items: center;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5); 
+color: #fff;
+font-size:medium;
+}
+.titulos-galeria2{
+position:absolute;
+top:0rem;
+left:23rem;
+width:8rem;
+height:3rem;
+align-items: center;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5); 
+color: #fff;
+font-size:medium;
+}
+.titulos-galeria3{
+position:absolute;
+top:0rem;
+left:45.4rem;
+width:8rem;
+height:3rem;
+align-items: center;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5); 
+color: #fff;
+font-size:medium;
+}
+
+.titulos-galeria4{
+position:absolute;
+top:0rem;
+left:0.8rem;
+width:8rem;
+height:3rem;
+align-items: center;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5); 
+color: #fff;
+font-size:medium;
+}
+
+.titulos-galeria5{
+position:absolute;
+top:0rem;
+left:23rem;
+width:8rem;
+height:3rem;
+align-items: center;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5); 
+color: #fff;
+font-size:medium;
+}
+
+.titulos-galeria6{
+position:absolute;
+top:0rem;
+left:45.4rem;
+width:8rem;
+height:3rem;
+align-items: center;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.5); 
+color: #fff;
+font-size:medium;
+}
+
 .logo{
     z-index: 0;
     position: relative;
@@ -207,6 +317,48 @@ body.modal-open {
             line-height:0.9;
         }
        
+        .titulos-galeria1{
+            position: absolute;
+            left:0rem;
+            width:5rem;
+            height:1rem ;
+            font-size: xx-small;
+        }
+        .titulos-galeria2{
+            position: absolute;
+            left:7.2rem;
+            width:5rem;
+            height:1rem ;
+            font-size: xx-small;
+        }
+        .titulos-galeria3{
+            position: absolute;
+            left:14.2rem;
+            width:5rem;
+            height:1rem ;
+            font-size: xx-small;
+        }
+        .titulos-galeria4{
+            position: absolute;
+            left:0rem;
+            width:5rem;
+            height:1rem ;
+            font-size: xx-small;
+        }
+        .titulos-galeria5{
+            position: absolute;
+            left:7.2rem;
+            width:5rem;
+            height:1rem ;
+            font-size: xx-small;
+        }
+        .titulos-galeria6{
+            position: absolute;
+            left:14.2rem;
+            width:5rem;
+            height:1rem ;
+            font-size: xx-small;
+        }
 }
 
 @media (min-width:767px) and (max-width:1100px) { 
@@ -223,7 +375,48 @@ body.modal-open {
             text-align: center;
     
         }
-       
+        .titulos-galeria1{
+            position: absolute;
+            left:0.4rem;
+            width:5rem;
+            height:1rem ;
+            font-size: x-small;
+        }
+        .titulos-galeria2{
+            position: absolute;
+            left:14.2rem;
+            width:5rem;
+            height:1rem ;
+            font-size: x-small;
+        }
+        .titulos-galeria3{
+            position: absolute;
+            left:28rem;
+            width:5rem;
+            height:1rem ;
+            font-size: x-small;
+        }
+        .titulos-galeria4{
+            position: absolute;
+            left:0.4rem;
+            width:5rem;
+            height:1rem ;
+            font-size: x-small;
+        }
+        .titulos-galeria5{
+            position: absolute;
+            left:14.2rem;
+            width:5rem;
+            height:1rem ;
+            font-size: x-small;
+        }
+        .titulos-galeria6{
+            position: absolute;
+            left:28rem;
+            width:5rem;
+            height:1rem ;
+            font-size: x-small;
+        }
 }
 
 @media (min-width:1024px){
@@ -243,6 +436,50 @@ body.modal-open {
 }
 }
 
+@media (min-width:1440px){
+    .titulos-galeria1{
+            position: absolute;
+            left:0.9rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria2{
+            position: absolute;
+            left:26.6rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria3{
+            position: absolute;
+            left:51.8rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria4{
+            position: absolute;
+            left:0.9rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria5{
+            position: absolute;
+            left:26.6rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria6{
+            position: absolute;
+            left:51.8rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+}
 
 
     </style>
@@ -256,33 +493,32 @@ body.modal-open {
         <h2 class="relative inset-6 text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-center  sm:text-3xl sm:text-center w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
        
     </header>
-    <main >
-        <div class="flex flex-col">
-            <h1 class="w-full mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
+    <div class="flex flex-col">
+        <h1 class="w-full mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
 <nav class=" w-full mt-1 flex  items-center  " >
-    <ul class="movil flex mr-0 ml-0 text-green-500 font-semibold flex-row ">
-        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-700 " >Inicio </a></li></div>
-        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#nuestra-empresa.html" class="hover:text-green-700" >Historia</a></li></div>
-        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li></div>
-        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li></div>
-        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li></div>
-        <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#" class="hover:text-green-700" >Red Social</a></li></div>
-        <div ><li class="ml-5  mr-5 "><a href="#bodega.html" class="hover:text-green-700" >Bodega</a></li></div>
-    </ul>
+<ul class="movil flex mr-0 ml-0 text-green-500 font-semibold flex-row ">
+    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-700 " >Inicio </a></li></div>
+    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#nuestra-empresa.html" class="hover:text-green-700" >Historia</a></li></div>
+    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li></div>
+    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li></div>
+    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li></div>
+    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#" class="hover:text-green-700" >Red Social</a></li></div>
+    <div ><li class="ml-5  mr-5 "><a href="#bodega.html" class="hover:text-green-700" >Bodega</a></li></div>
+</ul>
 </nav>  
 </div>
-        <section >
+    <main >
+       
+        <section class="cliente" >
+            <div class="entidades"> <h2>Titulo Entidad 1</h2></div>
             <div class="carousel">
+                <div class="entidades"> <h2>Titulo Entidad 1</h2></div>
                 <div class="carousel-inner">
                     <div class="carousel-item ">
                         <div class="textos ">
                             <h2 class="lg:text-4xl max-md:text-lg sm:text-2xl font-bold text-white text-center mb-4">Le damos la bienvenida</h2>
                             <p class="font-semibold  max-md:hidden text-lg text-white text-center mb-4  flex justify-center items-center underline">Consulte nuestros productos y servicios que tenemos para usted.</p>
-                            
-
-                          </div>
-                        
-                        
+                          </div>     
                         <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
                         
                     </div>
@@ -314,12 +550,22 @@ body.modal-open {
     <img class="modal-content" src="">
 </div>
             <div class="mx-auto pt-8 pb-6 overflow-y-hidden"> 
+                
                 <div class="contenedor-galeria">
-                    <img src="imagen1.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <div class="titulos-galeria1 ">Titulo galeria 1</div>     
+                    <img src="imagen1.jpg" alt="" class="img-galeria" width="200" height="250" />
+
+                    <div class="titulos-galeria2 ">Titulo galeria 2</div>     
                     <img src="imagen6.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <div class="titulos-galeria3 ">Titulo galeria 3</div>     
                     <img src="imagen2.jpg" alt="" class="img-galeria" width="200" height="250">
+                    </div>
+                    <div class="contenedor-galeria">
+                    <div class="titulos-galeria4 ">Titulo galeria 4</div>     
                     <img src="imagen3.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <div class="titulos-galeria5 ">Titulo galeria 5</div>     
                     <img src="imagen4.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <div class="titulos-galeria6 ">Titulo galeria 6</div>     
                     <img src="imagen5.jpg" alt="" class="img-galeria" width="200" height="250">  
                 </div>
             </div>
