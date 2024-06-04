@@ -18,29 +18,52 @@ footer{
 main{
     width:85%;
     margin: 0 auto;
-    border:3px solid green;
+    
+}
+.container{
+    display: flex;
+    align-items: center; 
+    min-width:inherit;
+    justify-content: space-between;
+    margin-left:0.1rem;
+    
 }
 
 .entidades{
-    border:3px solid red;
+    /*width:33%;*/
+    flex-basis: 33%;
+    display: inline-block;
+    margin-left: 0.2rem;
+    margin-right: 0.3rem;
+    border:1.5px solid #888;
+    text-align: center;
 }
 
 .cliente{
-    width:70%;
-    border:3px solid blue;
-   
-}
-.carousel{
+    /*width:65%;*/
+    flex-basis: 65%;
+    display: inline-block;
+    margin-left: 0.2rem;
     
-  
 }
 
+.titulos-galeria{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    font-size:medium;
+}
 
-         @media (min-width:320px) { 
-        .carousel{
+    @media (min-width:320px) { 
+    .carousel{
             height:218px;
         }
-       
+    
+    .entidades{
+        font-size: xx-small;
+        position: relative;
+        top:-3.3rem;
+    }
+
 
     }
         .carousel {
@@ -121,16 +144,15 @@ main{
 	display: flex;
 	justify-content:space-around;
 	flex-wrap: nowrap;
-    position: relative;
-    right:0rem;
-    gap: 1rem;
+    gap:0.8rem;
 }
 
 .img-galeria{
 	object-fit: cover; 
-	width:30%;
+    width: 18.75rem; /* 18.75 rem = 300 px */
+    height: 12.5rem; /* 12.5 rem = 200 px */
 	display: block;
-	margin-bottom: 15px;
+    margin-bottom: 0.7rem; 
 	box-shadow: 0 0 6px rgba(0,0,0,.5);
 	cursor:pointer;
 }
@@ -201,88 +223,6 @@ body.modal-open {
   border-radius: 5px;
 }
 
-.titulos-galeria1{
-position:absolute;
-top:0rem;    
-left:0.8rem;
-width:8rem;
-height:3rem;
-align-items: center;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5); 
-color: #fff;
-font-size:medium;
-}
-.titulos-galeria2{
-position:absolute;
-top:0rem;
-left:23rem;
-width:8rem;
-height:3rem;
-align-items: center;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5); 
-color: #fff;
-font-size:medium;
-}
-.titulos-galeria3{
-position:absolute;
-top:0rem;
-left:45.4rem;
-width:8rem;
-height:3rem;
-align-items: center;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5); 
-color: #fff;
-font-size:medium;
-}
-
-.titulos-galeria4{
-position:absolute;
-top:0rem;
-left:0.8rem;
-width:8rem;
-height:3rem;
-align-items: center;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5); 
-color: #fff;
-font-size:medium;
-}
-
-.titulos-galeria5{
-position:absolute;
-top:0rem;
-left:23rem;
-width:8rem;
-height:3rem;
-align-items: center;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5); 
-color: #fff;
-font-size:medium;
-}
-
-.titulos-galeria6{
-position:absolute;
-top:0rem;
-left:45.4rem;
-width:8rem;
-height:3rem;
-align-items: center;
-display: flex;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5); 
-color: #fff;
-font-size:medium;
-}
-
 .logo{
     z-index: 0;
     position: relative;
@@ -295,7 +235,15 @@ font-size:medium;
     position: relative;
     left:68px;
 }
-
+@media(min-width:390px) {
+    .entidades{
+    position: relative;
+    top:-3.3rem;
+}
+.titulos-galeria{
+    font-size: xx-small;
+}
+}
 @media (max-width:640px) { 
         .logo{
             left:2.6rem;
@@ -315,48 +263,7 @@ font-size:medium;
             line-height:0.9;
         }
        
-        .titulos-galeria1{
-            position: absolute;
-            left:0rem;
-            width:5rem;
-            height:1rem ;
-            font-size: xx-small;
-        }
-        .titulos-galeria2{
-            position: absolute;
-            left:7.2rem;
-            width:5rem;
-            height:1rem ;
-            font-size: xx-small;
-        }
-        .titulos-galeria3{
-            position: absolute;
-            left:14.2rem;
-            width:5rem;
-            height:1rem ;
-            font-size: xx-small;
-        }
-        .titulos-galeria4{
-            position: absolute;
-            left:0rem;
-            width:5rem;
-            height:1rem ;
-            font-size: xx-small;
-        }
-        .titulos-galeria5{
-            position: absolute;
-            left:7.2rem;
-            width:5rem;
-            height:1rem ;
-            font-size: xx-small;
-        }
-        .titulos-galeria6{
-            position: absolute;
-            left:14.2rem;
-            width:5rem;
-            height:1rem ;
-            font-size: xx-small;
-        }
+      
 }
 
 @media (min-width:767px) and (max-width:1100px) { 
@@ -373,47 +280,13 @@ font-size:medium;
             text-align: center;
     
         }
-        .titulos-galeria1{
-            position: absolute;
-            left:0.4rem;
-            width:5rem;
-            height:1rem ;
-            font-size: x-small;
+       
+        .entidades{
+        position: relative;
+        top:-7.8rem;
         }
-        .titulos-galeria2{
-            position: absolute;
-            left:14.2rem;
-            width:5rem;
-            height:1rem ;
-            font-size: x-small;
-        }
-        .titulos-galeria3{
-            position: absolute;
-            left:28rem;
-            width:5rem;
-            height:1rem ;
-            font-size: x-small;
-        }
-        .titulos-galeria4{
-            position: absolute;
-            left:0.4rem;
-            width:5rem;
-            height:1rem ;
-            font-size: x-small;
-        }
-        .titulos-galeria5{
-            position: absolute;
-            left:14.2rem;
-            width:5rem;
-            height:1rem ;
-            font-size: x-small;
-        }
-        .titulos-galeria6{
-            position: absolute;
-            left:28rem;
-            width:5rem;
-            height:1rem ;
-            font-size: x-small;
+        .titulos-galeria{
+           font-size:small;
         }
 }
 
@@ -429,147 +302,37 @@ font-size:medium;
     height:auto;
     width:66%;
     text-align: center;
-    line-height:1.1;
-    
+    line-height:1.1;    
+}
+.titulos-galeria{
+    font-size: medium;
 }
 }
 /*Laptop*/
 @media (min-width:1280px){
-    .titulos-galeria1{
-            position: absolute;
-            left:0.9rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria2{
-            position: absolute;
-            left:23.6rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria3{
-            position: absolute;
-            left:46.6rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria4{
-            position: absolute;
-            left:0.9rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria5{
-            position: absolute;
-            left:23.6rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria6{
-            position: absolute;
-            left:46.6rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-
+   
+        .entidades{
+    
+        position: relative;
+        top:-13.8rem;
+}
 
 }
 
 @media (min-width:1440px){
-    .titulos-galeria1{
-            position: absolute;
-            left:0.9rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria2{
-            position: absolute;
-            left:26.6rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria3{
-            position: absolute;
-            left:51.8rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria4{
-            position: absolute;
-            left:0.9rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria5{
-            position: absolute;
-            left:26.6rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria6{
-            position: absolute;
-            left:51.8rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-      
+   
+        .entidades{
+        position: relative;
+        top:-14.6rem;
+}
 }
 /*Desktop*/
 @media (min-width:1600px){
-    .titulos-galeria1{
-            position: absolute;
-            left:0.9rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria2{
-            position: absolute;
-            left:29.7rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria3{
-            position: absolute;
-            left:58.3rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria4{
-            position: absolute;
-            left:0.9rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria5{
-            position: absolute;
-            left:29.7rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
-        .titulos-galeria6{
-            position: absolute;
-            left:58.3rem;
-            width:8rem;
-            height:2rem ;
-            font-size:medium;
-        }
+    
+        .entidades{
+        position: relative;
+        top:-16rem;
+}
        
 }
 @media (min-width:1220px){
@@ -604,40 +367,42 @@ font-size:medium;
 </div>
     <main >
        
-        <section class="cliente" >
-
-            <div class="carousel">
-              
-                <div class="carousel-inner">
-                    <div class="carousel-item ">
-                        <div class="textos ">
-                            <h2 class="lg:text-4xl max-md:text-lg sm:text-2xl font-bold text-white text-center mb-4">Le damos la bienvenida</h2>
-                            <p class="font-semibold  max-md:hidden text-lg text-white text-center mb-4  flex justify-center items-center underline">Consulte nuestros productos y servicios que tenemos para usted.</p>
-                          </div>     
-                        <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
-                        
+    <section  >
+        <div class="container">
+            <div class="cliente">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item ">
+                            <div class="textos ">
+                                <h2 class="lg:text-4xl max-md:text-lg sm:text-2xl font-bold text-white text-center mb-4">Le damos la bienvenida</h2>
+                                <p class="font-semibold  max-md:hidden text-lg text-white text-center mb-4  flex justify-center items-center underline">Consulte nuestros productos y servicios que tenemos para usted.</p>
+                              </div>     
+                            <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
+                             </div>
+                        <div class="carousel-item">
+                            <img src="imagen2.jpg" alt="Slide 2" class="w-full min-h-full">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagen3.jpg" alt="Slide 3" class="w-full min-h-full">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagen4.jpg" alt="Slide 4" class="w-full min-h-full">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagen5.jpg" alt="Slide 5" class="w-full min-h-full">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
+                        </div>
                     </div>
-                    
-                    <div class="carousel-item">
-                        <img src="imagen2.jpg" alt="Slide 2" class="w-full min-h-full">
                     </div>
-                    <div class="carousel-item">
-                        <img src="imagen3.jpg" alt="Slide 3" class="w-full min-h-full">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagen4.jpg" alt="Slide 4" class="w-full min-h-full">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagen5.jpg" alt="Slide 5" class="w-full min-h-full">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagen1.jpg" alt="Slide 1" class="w-full min-h-full">
-                    </div>
-                  
-                </div>
-                 
+                
+                
             </div>
-            <div class="entidades"> <h2>Titulo Entidad 1</h2></div>
+            <div class="entidades"> <h2>Titulo Entidad 1</h2>
+                <p>contenido entidad 1</p>
+            </div>     
+        </div>
         </section>
         <section class=gallery id="galeria">
                     <!-- Modal para la imagen seleccionada -->
@@ -648,21 +413,26 @@ font-size:medium;
             <div class="mx-auto pt-8 pb-6 overflow-y-hidden"> 
                 
                 <div class="contenedor-galeria">
-                    <div class="titulos-galeria1 ">Titulo galeria 1</div>     
-                    <img src="imagen1.jpg" alt="" class="img-galeria" width="200" height="250" />
-
-                    <div class="titulos-galeria2 ">Titulo galeria 2</div>     
-                    <img src="imagen6.jpg" alt="" class="img-galeria" width="200" height="250">
-                    <div class="titulos-galeria3 ">Titulo galeria 3</div>     
-                    <img src="imagen2.jpg" alt="" class="img-galeria" width="200" height="250">
+                    <div ><span class="titulos-galeria ">Titulo galeria 1 </span>
+                    <img src="imagen1.jpg" alt="" class="img-galeria" />
+                    </div>   
+                    <div ><span class="titulos-galeria ">Titulo galeria 2 </span>
+                    <img src="imagen6.jpg" alt="" class="img-galeria" >
+                    </div>  
+                    <div ><span class="titulos-galeria ">Titulo galeria 3 </span>
+                    <img src="imagen2.jpg" alt="" class="img-galeria" >
+                    </div> 
                     </div>
                     <div class="contenedor-galeria">
-                    <div class="titulos-galeria4 ">Titulo galeria 4</div>     
-                    <img src="imagen3.jpg" alt="" class="img-galeria" width="200" height="250">
-                    <div class="titulos-galeria5 ">Titulo galeria 5</div>     
-                    <img src="imagen4.jpg" alt="" class="img-galeria" width="200" height="250">
-                    <div class="titulos-galeria6 ">Titulo galeria 6</div>     
-                    <img src="imagen5.jpg" alt="" class="img-galeria" width="200" height="250">  
+                    <div ><span class="titulos-galeria ">Titulo galeria 4 </span>
+                    <img src="imagen3.jpg" alt="" class="img-galeria" >
+                    </div>
+                    <div> <span class="titulos-galeria ">Titulo galeria 5 </span>    
+                    <img src="imagen4.jpg" alt="" class="img-galeria">
+                    </div>
+                    <div><span class="titulos-galeria ">Titulo galeria 6 </span>
+                    <img src="imagen5.jpg" alt="" class="img-galeria" >  
+                    </div>    
                 </div>
             </div>
         </section>
