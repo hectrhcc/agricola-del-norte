@@ -35,15 +35,13 @@ main{
   
 }
 
+
          @media (min-width:320px) { 
         .carousel{
             height:218px;
         }
        
-.logo{
-    position: relative;
-    right:2rem;
-}
+
     }
         .carousel {
             display: flex;
@@ -435,6 +433,53 @@ font-size:medium;
     
 }
 }
+/*Laptop*/
+@media (min-width:1280px){
+    .titulos-galeria1{
+            position: absolute;
+            left:0.9rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria2{
+            position: absolute;
+            left:23.6rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria3{
+            position: absolute;
+            left:46.6rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria4{
+            position: absolute;
+            left:0.9rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria5{
+            position: absolute;
+            left:23.6rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria6{
+            position: absolute;
+            left:46.6rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+
+
+}
 
 @media (min-width:1440px){
     .titulos-galeria1{
@@ -479,18 +524,68 @@ font-size:medium;
             height:2rem ;
             font-size:medium;
         }
+      
 }
-
-
+/*Desktop*/
+@media (min-width:1600px){
+    .titulos-galeria1{
+            position: absolute;
+            left:0.9rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria2{
+            position: absolute;
+            left:29.7rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria3{
+            position: absolute;
+            left:58.3rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria4{
+            position: absolute;
+            left:0.9rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria5{
+            position: absolute;
+            left:29.7rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+        .titulos-galeria6{
+            position: absolute;
+            left:58.3rem;
+            width:8rem;
+            height:2rem ;
+            font-size:medium;
+        }
+       
+}
+@media (min-width:1220px){
+.rrss{
+    width:43%;
+}
+}
     </style>
     
 </head>
 <body>  
     <header class="bg-white flex justify-center items-center  w-full"> 
         <div class="flex items-center"> <!-- Contenedor izquierdo -->
-            <img src="logo.png" class="logo  top-0 h-auto"></img><!-- Logo -->
+            <img src="logo.png" class="logo  max-md:right-2 top-0 h-auto"></img><!-- Logo -->
         </div>      
-        <h2 class="relative inset-6 text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-center  sm:text-3xl sm:text-center w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
+        <h2 class="relative inset-6 text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-center  max-md:text-base max-md:left-2 sm:text-3xl sm:text-center w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
        
     </header>
     <div class="flex flex-col">
@@ -510,9 +605,9 @@ font-size:medium;
     <main >
        
         <section class="cliente" >
-            <div class="entidades"> <h2>Titulo Entidad 1</h2></div>
+
             <div class="carousel">
-                <div class="entidades"> <h2>Titulo Entidad 1</h2></div>
+              
                 <div class="carousel-inner">
                     <div class="carousel-item ">
                         <div class="textos ">
@@ -540,8 +635,9 @@ font-size:medium;
                     </div>
                   
                 </div>
+                 
             </div>
-          
+            <div class="entidades"> <h2>Titulo Entidad 1</h2></div>
         </section>
         <section class=gallery id="galeria">
                     <!-- Modal para la imagen seleccionada -->
@@ -581,7 +677,7 @@ font-size:medium;
         <p>Av. Manuel Castillo Ibaceta #3689 - Arica</p>
     </div>
     <div class="lg:mr-11 lg:ml-12 max-md:mb-8"> <div><img src="logo-texto.png" alt="logo con info de la empresa"></div> 
-    <div class="flex justify-center items-center "> 
+    <div class="flex justify-center items-center rrss  "> 
         <a 
         href="https://web.facebook.com/agricoladelnortesa" 
         target="_blank" class="text-xl text-blue-500 hover:text-blue-700" ><i class="fab fa-facebook mr-4 mt-4"></i></a>
@@ -591,7 +687,7 @@ font-size:medium;
     </div>
     </div>
     <div >
-        <ul class="sm:text-center sm:mt-8 md:mt-8 lg:text-justify lg:mt-0 max-md:text-center">
+        <ul class="sm:text-center sm:mt-8 md:mt-8 lg:text-justify lg:hidden max-md:text-center">
             <li>
         <a href="#inicio" class="hover:text-green-500 "><i class="fas fa-home"></i> Inicio</a></li>
         <li><a href="#nuestraempresa" class="hover:text-green-500"><i class="fas fa-users "></i> Nuestra Empresa</a></li>

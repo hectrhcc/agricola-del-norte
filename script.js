@@ -3,13 +3,7 @@ document.addEventListener('DOMContentLoaded', () => { //para que funcionen los a
     const modal = document.querySelector('.modal');
     const modalImg = document.querySelector('.modal-content')
     const cerrar = document.querySelector('.close')
-    const despliguenav = document.querySelector('.hamburguesa')
     const movil = document.querySelector('.movil')
-
-despliguenav.addEventListener('click',()=>{
-    movil.style.display = 'block'; 
-    despliguenav.style.display = 'none'; 
-})
 
     imagenes.forEach(imagen =>{
         imagen.addEventListener('click', ()=>{
