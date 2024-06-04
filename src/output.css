@@ -677,6 +677,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -950,8 +954,16 @@ video {
     margin-right: 0.75rem;
   }
 
+  .max-md\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .max-md\:hidden {
     display: none;
+  }
+
+  .max-md\:w-full {
+    width: 100%;
   }
 
   .max-md\:pb-6 {
@@ -991,8 +1003,20 @@ video {
     margin-top: 2rem;
   }
 
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:pb-8 {

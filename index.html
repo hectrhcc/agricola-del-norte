@@ -18,6 +18,12 @@ footer{
 main{
     width:85%;
     margin: 0 auto;
+    
+}
+
+nav{
+    margin: 0 auto;
+    width:95%;
 }
 
 section{
@@ -332,12 +338,35 @@ body.modal-open {
     width:43%;
 }
 }
-@media(min-width:2100px){
+
+@media (min-width: 1500px) and (max-width: 1900px) {
+  nav {
+    position: relative;
+    left:6rem;
+  }
+}
+
+@media (min-width: 1901px) and (max-width: 2100px) {
+  nav {
+    position: relative;
+    left:12rem;
+    width:100%;
+  }
+}
+@media (min-width:2100px) and (max-width: 2599px) {
+  nav {
+    position: relative;
+    left:19rem;
+    width:100%;
+  }
+}
+@media(min-width:2600px){
 nav{
     display: flex;
 justify-content: center;
 align-items: center;
 font-size: larger;
+width:100%;
 }
 
 }
@@ -353,7 +382,7 @@ font-size: larger;
     <h2 class="relative inset-2 text-green-600 lg:hidden font-bold mt-0 p-0 flex items-center justify-center max-md:text-base sm:text-3xl   ">Agricola del Norte S.A.</h2><!-- Título -->        
     <div class="flex flex-col">
         <h1 class="w-full z-10 mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
-<nav class=" w-full mt-1  flex  items-center  " >
+<nav class=" mt-2 mb-2  flex  items-center max-md:w-full sm:mt-4 sm:w-full " >
 <ul class="movil flex mr-0 ml-0 text-green-500 font-semibold flex-row ">
     <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-700 " >Inicio </a></li></div>
     <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#nuestra-empresa.html" class="hover:text-green-700" >Historia</a></li></div>
