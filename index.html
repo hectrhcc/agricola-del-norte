@@ -18,33 +18,40 @@ footer{
 main{
     width:85%;
     margin: 0 auto;
-    
+}
+
+section{
+    width:100%;
 }
 .container{
     display: flex;
-    align-items: center; 
-    min-width:inherit;
-    justify-content: space-between;
-    margin-left:0.1rem;
-    
+    justify-content:space-evenly;
+    /*align-items: center; contrae el div derecho de Entidad*/ 
+}
+
+@media (min-width:1800px){
+    .container{
+        margin: 0 auto;
+        min-width: 100%;
+    }
 }
 
 .entidades{
-    /*width:33%;*/
-    flex-basis: 33%;
-    display: inline-block;
+    width:30%;
+    /*flex-basis: 33%; no sirve para pantallas sobre 1800px*/
+    display: inline;
     margin-left: 0.2rem;
     margin-right: 0.3rem;
     border:1.5px solid #888;
     text-align: center;
+    justify-content: flex-end;
 }
 
 .cliente{
-    /*width:65%;*/
-    flex-basis: 65%;
-    display: inline-block;
+    width:65%;
+    /*flex-basis: 65%;*/
+    display: inline;
     margin-left: 0.2rem;
-    
 }
 
 .titulos-galeria{
@@ -61,7 +68,7 @@ main{
     .entidades{
         font-size: xx-small;
         position: relative;
-        top:-3.3rem;
+        top:0rem;
     }
 
 
@@ -207,7 +214,7 @@ body.modal-open {
 
 @keyframes emergeLogo {
     0% {
-        transform: translateY(100%);
+        transform: translateY(60%);
     }
     100% {  
         transform: translateY(0);
@@ -235,19 +242,20 @@ body.modal-open {
     position: relative;
     left:68px;
 }
-@media(min-width:390px) {
-    .entidades{
-    position: relative;
-    top:-3.3rem;
+
+@media(max-width:600px){
+    .logo{
+        width:9.5rem ;
+    }
 }
+@media(min-width:390px) {
+
 .titulos-galeria{
     font-size: xx-small;
 }
 }
 @media (max-width:640px) { 
-        .logo{
-            left:2.6rem;
-        }
+        
         .movil{
             font-size:42%;
             
@@ -267,9 +275,6 @@ body.modal-open {
 }
 
 @media (min-width:767px) and (max-width:1100px) { 
-        .logo{    
-            left:8rem;
-        }
         .movil{
             font-size: small;
             position:relative;
@@ -281,10 +286,7 @@ body.modal-open {
     
         }
        
-        .entidades{
-        position: relative;
-        top:-7.8rem;
-        }
+       
         .titulos-galeria{
            font-size:small;
         }
@@ -311,49 +313,47 @@ body.modal-open {
 /*Laptop*/
 @media (min-width:1280px){
    
-        .entidades{
-    
-        position: relative;
-        top:-13.8rem;
-}
+ 
 
 }
 
 @media (min-width:1440px){
    
-        .entidades{
-        position: relative;
-        top:-14.6rem;
-}
+
 }
 /*Desktop*/
 @media (min-width:1600px){
     
-        .entidades{
-        position: relative;
-        top:-16rem;
+      
 }
-       
-}
+
 @media (min-width:1220px){
 .rrss{
     width:43%;
 }
+}
+@media(min-width:2100px){
+nav{
+    display: flex;
+justify-content: center;
+align-items: center;
+font-size: larger;
+}
+
 }
     </style>
     
 </head>
 <body>  
     <header class="bg-white flex justify-center items-center  w-full"> 
-        <div class="flex items-center"> <!-- Contenedor izquierdo -->
-            <img src="logo.png" class="logo  max-md:right-2 top-0 h-auto"></img><!-- Logo -->
-        </div>      
-        <h2 class="relative inset-6 text-green-600 lg:hidden font-bold mt-0 p-0  max-md:text-center  max-md:text-base max-md:left-2 sm:text-3xl sm:text-center w-full  ">Agricola del Norte S.A.</h2><!-- Título -->        
-       
+        <div class="flex items-center"> <!-- Contenedor arriba -->
+            <img src="logo.png" class="logo  flex items-center justify-center top-0 h-auto "></img><!-- Logo -->
+        </div>         
     </header>
+    <h2 class="relative inset-2 text-green-600 lg:hidden font-bold mt-0 p-0 flex items-center justify-center max-md:text-base sm:text-3xl   ">Agricola del Norte S.A.</h2><!-- Título -->        
     <div class="flex flex-col">
-        <h1 class="w-full mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
-<nav class=" w-full mt-1 flex  items-center  " >
+        <h1 class="w-full z-10 mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
+<nav class=" w-full mt-1  flex  items-center  " >
 <ul class="movil flex mr-0 ml-0 text-green-500 font-semibold flex-row ">
     <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-700 " >Inicio </a></li></div>
     <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#nuestra-empresa.html" class="hover:text-green-700" >Historia</a></li></div>
@@ -366,9 +366,8 @@ body.modal-open {
 </nav>  
 </div>
     <main >
-       
-    <section  >
-        <div class="container">
+    <section >
+        <div  class="container">
             <div class="cliente">
                 <div class="carousel">
                     <div class="carousel-inner">
@@ -396,15 +395,13 @@ body.modal-open {
                         </div>
                     </div>
                     </div>
-                
-                
             </div>
-            <div class="entidades"> <h2>Titulo Entidad 1</h2>
-                <p>contenido entidad 1</p>
-            </div>     
-        </div>
-        </section>
-        <section class=gallery id="galeria">
+        <div class="entidades"> <h2>Titulo Entidad 1</h2>
+            <p>contenido entidad 1</p>
+        </div>  
+      </div> 
+    </section>
+    <section class=gallery id="galeria">
                     <!-- Modal para la imagen seleccionada -->
 <div class="modal">
     <span class="close">&times;</span>
