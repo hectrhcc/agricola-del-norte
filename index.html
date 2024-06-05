@@ -11,6 +11,29 @@
     <link href="./src/output.css" rel="stylesheet">
     <title>Agricola del Norte</title>
     <style>
+::-webkit-scrollbar {
+  width: 1rem; /* Ancho de la barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #489c31);
+  border-radius:3rem;
+}
+    .fondo{
+        background-color: #E6E6E6;
+       
+    }
+    
+    header{
+        background-image: url();
+        background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    }
 footer{
     width:85%;
     margin: 0 auto;
@@ -18,7 +41,7 @@ footer{
 main{
     width:85%;
     margin: 0 auto;
-    
+  
 }
 
 nav{
@@ -28,12 +51,18 @@ nav{
 
 section{
     width:100%;
+    background-color:beige;
 }
 .container{
     display: flex;
     justify-content:space-evenly;
     /*align-items: center; contrae el div derecho de Entidad*/ 
+    padding-top: 1rem;
 }
+
+.ini:hover, .hist:hover, .obj:hover, .prod:hover , .cont:hover, .red:hover , .bod:hover{
+    transform: translateY(-5px); 
+  }
 
 @media (min-width:1800px){
     .container{
@@ -50,7 +79,8 @@ section{
     margin-right: 0.3rem;
     border:1.5px solid #888;
     text-align: center;
-    justify-content: flex-end;
+  
+    background-color: white;
 }
 
 .cliente{
@@ -65,6 +95,7 @@ section{
     color: #fff;
     font-size:medium;
 }
+
 
     @media (min-width:320px) { 
     .carousel{
@@ -150,7 +181,7 @@ section{
         }
 
         .gallery{
-	background: #f2f2f2;
+	background: beige;
 }
 
 .contenedor-galeria{
@@ -325,12 +356,16 @@ body.modal-open {
 
 @media (min-width:1440px){
    
-
+    .entidades{
+    font-size: large;
+}
 }
 /*Desktop*/
 @media (min-width:1600px){
     
-      
+.entidades{
+    font-size: x-large;
+}
 }
 
 @media (min-width:1220px){
@@ -383,17 +418,18 @@ width:100%;
     <div class="flex flex-col">
         <h1 class="w-full z-10 mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
 <nav class=" mt-2 mb-2  flex  items-center max-md:w-full sm:mt-4 sm:w-full " >
-<ul class="movil flex mr-0 ml-0 text-green-500 font-semibold flex-row ">
-    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-700 " >Inicio </a></li></div>
-    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#nuestra-empresa.html" class="hover:text-green-700" >Historia</a></li></div>
-    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#objetivos.html" class="hover:text-green-700" >Objetivos</a></li></div>
-    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#productos-servicios.html" class="hover:text-green-700" >Productos & Servicios</a></li></div>
-    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto.html" class="hover:text-green-700" >Contacto</a></li></div>
-    <div class="border-r border-solid border-gray-300"><li class="max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#" class="hover:text-green-700" >Red Social</a></li></div>
-    <div ><li class="ml-5  mr-5 "><a href="#bodega.html" class="hover:text-green-700" >Bodega</a></li></div>
+<ul class="movil flex mr-0 ml-0 text-gray-600 font-semibold flex-row ">
+    <div class="border-r border-solid border-gray-400 "><li class="ini  max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="#inicio"  class="hover:text-green-500 " >Inicio </a></li></div>
+    <div class="border-r border-solid border-gray-400"><li class="hist max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#historia.html" class="hover:text-green-500" >Historia</a></li></div>
+    <div class="border-r border-solid border-gray-400"><li class="obj max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#objetivos.html" class="hover:text-green-500" >Objetivos</a></li></div>
+    <div class="border-r border-solid border-gray-400"><li class="prod max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#productos-servicios.html" class="hover:text-green-500" >Productos & Servicios</a></li></div>
+    <div class="border-r border-solid border-gray-400"><li class="cont max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto.html" class="hover:text-green-500" >Contacto</a></li></div>
+    <div class="border-r border-solid border-gray-400"><li class="red max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#" class="hover:text-green-500" >Red Social</a></li></div>
+    <div ><li class="bod ml-5  mr-5 "><a href="#bodega.html" class="hover:text-green-500" >Bodega</a></li></div>
 </ul>
 </nav>  
 </div>
+<div class="fondo">
     <main >
     <section >
         <div  class="container">
@@ -427,6 +463,8 @@ width:100%;
             </div>
         <div class="entidades"> <h2>Titulo Entidad 1</h2>
             <p>contenido entidad 1</p>
+            <h2>Titulo Entidad 2</h2>
+            <p>contenido entidad 2</p>
         </div>  
       </div> 
     </section>
@@ -440,21 +478,21 @@ width:100%;
                 
                 <div class="contenedor-galeria">
                     <div ><span class="titulos-galeria ">Titulo galeria 1 </span>
-                    <img src="imagen1.jpg" alt="" class="img-galeria" />
+                    <img src="imagen1.jpg" alt="" class="img-galeria " />
                     </div>   
                     <div ><span class="titulos-galeria ">Titulo galeria 2 </span>
-                    <img src="imagen6.jpg" alt="" class="img-galeria" >
+                    <img src="imagen6.jpg" alt="" class=" img-galeria" >
                     </div>  
                     <div ><span class="titulos-galeria ">Titulo galeria 3 </span>
-                    <img src="imagen2.jpg" alt="" class="img-galeria" >
+                    <img src="imagen2.jpg" alt="" class=" img-galeria" >
                     </div> 
                     </div>
-                    <div class="contenedor-galeria">
+                    <div class="contenedor-galeria ">
                     <div ><span class="titulos-galeria ">Titulo galeria 4 </span>
-                    <img src="imagen3.jpg" alt="" class="img-galeria" >
+                    <img src="imagen3.jpg" alt="" class=" img-galeria" >
                     </div>
                     <div> <span class="titulos-galeria ">Titulo galeria 5 </span>    
-                    <img src="imagen4.jpg" alt="" class="img-galeria">
+                    <img src="imagen4.jpg" alt="" class=" img-galeria">
                     </div>
                     <div><span class="titulos-galeria ">Titulo galeria 6 </span>
                     <img src="imagen5.jpg" alt="" class="img-galeria" >  
@@ -463,6 +501,7 @@ width:100%;
             </div>
         </section>
     </main>
+
 <footer class="bg-green-950 text-white ">
     <div class="flex lg:flex-row flex-wrap items-center justify-center p-4 ">
     <div class=" text-center sm:mb-8 max-md:mb-8 lg:mt-8">
@@ -486,17 +525,18 @@ width:100%;
         <ul class="sm:text-center sm:mt-8 md:mt-8 lg:text-justify lg:hidden max-md:text-center">
             <li>
         <a href="#inicio" class="hover:text-green-500 "><i class="fas fa-home"></i> Inicio</a></li>
-        <li><a href="#nuestraempresa" class="hover:text-green-500"><i class="fas fa-users "></i> Nuestra Empresa</a></li>
+        <li><a href="#historia" class="hover:text-green-500"><i class="fas fa-users "></i> Historia</a></li>
         <li><a href="#objetivos" class="hover:text-green-500"><i class="fas fa-bullseye"></i> Objetivos</a></li>
         <li><a href="#productosyservicios" class="hover:text-green-500"><i class="fas fa-shopping-bag"></i> Productos & Servicios</a></li>
         <li><a href="#contacto" class="hover:text-green-500"><i class="fas fa-comment"></i>
             Contacto</a></li>
-        <li><a href="#disposiciones" class="hover:text-green-500"><i class="fas fa-exclamation-triangle"></i> Disposiciones</a></li>
+        <li><a href="#bodega" class="hover:text-green-500"><i class="fas fa-exclamation-triangle"></i>Bodega</a></li>
         </ul>
     </div>
     </div>
     <div class="text-center mt-1 pb-2 max-md:pb-6 sm:pb-8 ">Agricola del Norte S.A. Todos los derechos reservados.</div>    
 </footer>
 <script src="script.js"></script>
+</div>
 </body>
 </html>
