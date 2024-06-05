@@ -135,6 +135,12 @@ section{
     font-size:medium;
 }
 
+textarea{
+    resize: none;
+    width:26.2rem; 
+    height:11em;
+}
+
 
     @media (min-width:320px) { 
     .carousel{
@@ -352,12 +358,17 @@ body.modal-open {
    width:35%;
    margin-top: 1rem;
 }
+textarea{
+    width:22.4rem; 
+    height:10rem;
+}
 .mapa{
     width:42%;
     margin-top: 1rem;
     height:13.1rem;
     
 }
+
       
 }
 
@@ -376,6 +387,9 @@ body.modal-open {
        
         .titulos-galeria{
            font-size:small;
+        }
+        .mapa{
+            height:12.2rem;
         }
 }
 
@@ -592,7 +606,7 @@ width:100%;
         <label class="block">Asunto</label>
         <input type="text" class="block bg-white">
         <label class="block">Mensaje</label>
-        <textarea class="block bg-white" style="resize: none;width:26.2rem; height:11em;"></textarea>
+        <textarea class="block bg-white"></textarea>
         <input type="button" value="Enviar" class="botonform"/>
         </div>
         <div id="map" class="mapa">
