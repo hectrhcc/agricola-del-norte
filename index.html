@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
     <title>Agricola del Norte</title>
     <style>
 ::-webkit-scrollbar {
@@ -49,6 +55,32 @@ nav{
     width:95%;
 }
 
+.contenedor{
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 2.8rem;
+}
+
+.contacto{
+   position: relative;
+   left:3rem;
+   width:40%;
+   margin-top: 1rem;
+}
+.mapa{
+    width:42%;
+    margin-top: 1rem;
+    height:17.1rem;
+}
+.botonform{
+    border:none;
+    background-color: #3E8C6B;
+    padding:0.5rem 1rem;
+    border-radius:0.6rem;
+    margin-top:1rem;
+    
+}
 section{
     width:100%;
     background-color:beige;
@@ -64,6 +96,13 @@ section{
     transform: translateY(-5px); 
   }
 
+.logos{
+    margin: 0.7rem auto;
+    width:50%;
+    height: auto;
+}
+
+
 @media (min-width:1800px){
     .container{
         margin: 0 auto;
@@ -77,10 +116,10 @@ section{
     display: inline;
     margin-left: 0.2rem;
     margin-right: 0.3rem;
-    border:1.5px solid #888;
+    border:none;
     text-align: center;
-  
     background-color: white;
+    border-radius: 0.7rem;
 }
 
 .cliente{
@@ -307,7 +346,18 @@ body.modal-open {
             text-align: center;
             line-height:0.9;
         }
-       
+        .contacto{
+   position: relative;
+   left:-1.5rem;
+   width:35%;
+   margin-top: 1rem;
+}
+.mapa{
+    width:42%;
+    margin-top: 1rem;
+    height:13.1rem;
+    
+}
       
 }
 
@@ -450,7 +500,7 @@ width:100%;
     <div class="border-r border-solid border-gray-400"><li class="hist max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#historia.html" class="hover:text-green-500" >Historia</a></li></div>
     <div class="border-r border-solid border-gray-400"><li class="obj max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#objetivos.html" class="hover:text-green-500" >Objetivos</a></li></div>
     <div class="border-r border-solid border-gray-400"><li class="prod max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="#productos-servicios.html" class="hover:text-green-500" >Productos & Servicios</a></li></div>
-    <div class="border-r border-solid border-gray-400"><li class="cont max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto.html" class="hover:text-green-500" >Contacto</a></li></div>
+    <div class="border-r border-solid border-gray-400"><li class="cont max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#contacto" class="hover:text-green-500" >Contacto</a></li></div>
     <div class="border-r border-solid border-gray-400"><li class="red max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="#" class="hover:text-green-500" >Red Social</a></li></div>
     <div ><li class="bod ml-5  mr-5 "><a href="#bodega.html" class="hover:text-green-500" >Bodega</a></li></div>
 </ul>
@@ -488,10 +538,11 @@ width:100%;
                     </div>
                     </div>
             </div>
-        <div class="entidades"> <h2>Titulo Entidad 1</h2>
-            <p>contenido entidad 1</p>
-            <h2>Titulo Entidad 2</h2>
-            <p>contenido entidad 2</p>
+        <div class="entidades"> <h1 class="font-bold text-green-500 sm:text-xs max-md:text-xxs lg:text-xl ">Links de interés</h1>
+            <a href="https://www.conadi.gob.cl/" target="_blank"><img src="conadi.png" class="logos"></a>
+            <a href="https://www.sag.gob.cl/" target="_blank"><img src="sag.png" class="logos"></a>
+            <a href="https://www.indap.gob.cl/" target="_blank"><img src="indap.png" class="logos"></a>
+            <a href="https://minagri.gob.cl/region-de-arica-y-parinacota/" target="_blank"><img src="agri.png" class="logos relative left-2"></a>
         </div>  
       </div> 
     </section>
@@ -527,6 +578,29 @@ width:100%;
                 </div>
             </div>
         </section>
+
+    <section  >
+        <h1 class="block text-center lg:text-green-600 lg:text-4xl"  id="contacto">Contacto</h1>
+        <div class="contenedor">
+        <div class="contacto">
+        <label class="block ">Nombre Completo</label>
+        <input type="text " class="block bg-white">
+        <label class="block">Teléfono</label>
+        <input type="text" class="block bg-white">
+        <label class="block">E-mail</label>
+        <input type="text" class="block bg-white">
+        <label class="block">Asunto</label>
+        <input type="text" class="block bg-white">
+        <label class="block">Mensaje</label>
+        <textarea class="block bg-white" style="resize: none;width:26.2rem; height:11em;"></textarea>
+        <input type="button" value="Enviar" class="botonform"/>
+        </div>
+        <div id="map" class="mapa">
+            
+            <h1>as</h1>
+        </div>
+    </div>
+    </section>
     </main>
 
 <footer class="bg-green-950 text-white ">

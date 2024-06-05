@@ -23,4 +23,26 @@ document.addEventListener('DOMContentLoaded', () => { //para que funcionen los a
 
     var logo = document.querySelector('.logo');
     logo.style.animation = 'emergeLogo 2s forwards'; // Cambia '1s' a la duración deseada de la animación
+//MAPA
+
+    const map = L.map('map').setView([-18.50019,-70.28407], 17);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  const marker = L.marker([-18.50019,-70.28407]).addTo(map);
+ 
+
+  const polygon = L.polygon([
+    [-18.50019,-70.28407],
+    [-18.50019,-70.28407],
+    [-18.50019,-70.28407]
+  ]).addTo(map);
+
+  
+
+
+
 });
