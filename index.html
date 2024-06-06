@@ -66,18 +66,18 @@ nav{
    position: relative;
    left:3rem;
    width:40%;
-   margin-top: 1rem;
+   margin-top:1.6rem;
 }
 .mapa{
     width:42%;
-    margin-top: 1rem;
-    height:24.5rem;
+    margin-top:1.6rem;
+    height:19.5rem;
 }
 .botonform{
     border:none;
     background-color: #3E8C6B;
     padding:0.5rem 1rem;
-    border-radius:0.6rem;
+    border-radius:0.3rem;
     margin-top:1rem;
     color:#fff;
 }
@@ -90,10 +90,11 @@ section{
     justify-content:space-evenly;
     /*align-items: center; contrae el div derecho de Entidad*/ 
     padding-top: 1rem;
+    padding-bottom:1.5rem;
 }
 
-.ini:hover, .hist:hover, .obj:hover, .prod:hover , .cont:hover, .red:hover , .bod:hover{
-    transform: translateY(-5px); 
+.ini:hover, .hist:hover, .obj:hover, .prod:hover , .cont:hover, .red:hover , .bod:hover, .fb:hover, .email:hover, .fono:hover{
+    transform: translateY(-4px); 
   }
 
 .logos{
@@ -226,8 +227,9 @@ textarea{
   }
         }
 
-        .gallery{
-	background: beige;
+.gallery{
+	background: #058e4b;
+    padding-top:0.5rem;
 }
 
 .contenedor-galeria{
@@ -523,7 +525,7 @@ width:100%;
 </div>
 <div class="fondo">
     <main >
-    <section >
+    <section id="inicio" >
         <div  class="container">
             <div class="cliente">
                 <div class="carousel">
@@ -553,7 +555,7 @@ width:100%;
                     </div>
                     </div>
             </div>
-        <div class="entidades"> <h1 class="font-bold text-green-500 sm:text-xs max-md:text-xxs lg:text-xl ">Links de interés</h1>
+        <div class="entidades"> <h1 class="font-bold text-green-500 sm:text-xs max-md:text-xxs lg:text-xl ">Sitios de interés</h1>
             <a href="https://www.conadi.gob.cl/" target="_blank"><img src="conadi.png" class="logos"></a>
             <a href="https://www.sag.gob.cl/" target="_blank"><img src="sag.png" class="logos"></a>
             <a href="https://www.indap.gob.cl/" target="_blank"><img src="indap.png" class="logos"></a>
@@ -568,7 +570,6 @@ width:100%;
     <img class="modal-content" src="">
 </div>
             <div class="mx-auto pt-8 pb-6 overflow-y-hidden"> 
-                
                 <div class="contenedor-galeria">
                     <div ><span class="titulos-galeria ">Titulo galeria 1 </span>
                     <img src="imagen1.jpg" alt="" class="img-galeria " />
@@ -595,7 +596,8 @@ width:100%;
         </section>
 
     <section  >
-        <h1 class="block text-center lg:text-green-600 lg:text-4xl"  id="contacto">Contacto</h1>
+        <div class="border-b border-gray-400 mb-6"></div>
+        <h1 class="block text-center text-green-600 lg:text-4xl "  id="contacto">Contacto</h1>
         <div class="contenedor">
         <div class="contacto">
         <form>
@@ -630,9 +632,9 @@ width:100%;
     <div class="flex justify-center items-center rrss  "> 
         <a 
         href="https://web.facebook.com/agricoladelnortesa" 
-        target="_blank" class="text-xl text-blue-500 hover:text-blue-700" ><i class="fab fa-facebook mr-4 mt-4"></i></a>
-        <a href="tel:58-2-244485" class="text-xl hover:text-gray-700 text-gray-500"><i class="fas fa-mobile-alt mr-4  mt-4"></i></a>
-        <a href="mailto:agronort@gmail.com" class="text-xl  hover:text-red-700 text-red-500" ><i class="fas fa-envelope  mt-4"></i>
+        target="_blank" class="fb text-xl text-blue-500 hover:text-blue-700" ><i class="fab fa-facebook mr-4 mt-4"></i></a>
+        <a href="tel:58-2-244485" class="fono text-xl hover:text-gray-700 text-gray-500"><i class=" fas fa-mobile-alt mr-4  mt-4"></i></a>
+        <a href="mailto:agronort@gmail.com" class="email text-xl  hover:text-red-700 text-red-500" ><i class="fas fa-envelope  mt-4"></i>
         </a>
     </div>
     </div>
@@ -640,12 +642,12 @@ width:100%;
         <ul class="sm:text-center sm:mt-8 md:mt-8 lg:text-justify lg:hidden max-md:text-center">
             <li>
         <a href="#inicio" class="hover:text-green-500 "><i class="fas fa-home"></i> Inicio</a></li>
-        <li><a href="#historia" class="hover:text-green-500"><i class="fas fa-users "></i> Historia</a></li>
+        <li><a href="#historia.html" class="hover:text-green-500"><i class="fas fa-users "></i> Historia</a></li>
         <li><a href="#objetivos" class="hover:text-green-500"><i class="fas fa-bullseye"></i> Objetivos</a></li>
         <li><a href="#productosyservicios" class="hover:text-green-500"><i class="fas fa-shopping-bag"></i> Productos & Servicios</a></li>
         <li><a href="#contacto" class="hover:text-green-500"><i class="fas fa-comment"></i>
             Contacto</a></li>
-        <li><a href="#bodega" class="hover:text-green-500"><i class="fas fa-exclamation-triangle"></i>Bodega</a></li>
+        <li><a href="#bodega.html" class="hover:text-green-500"><i class="fas fa-exclamation-triangle"></i>Bodega</a></li>
         </ul>
     </div>
     </div>
