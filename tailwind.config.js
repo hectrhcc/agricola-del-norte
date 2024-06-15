@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html", // Ruta a tu archivo HTML en el directorio raíz
-    "./src/**/*.js", // Ejemplo de otras rutas para archivos JavaScript
-  ],
+  content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "Red": "hsl(0, 66%, 54%)"
+    }
   },
+},
   plugins: [],
 }
 
