@@ -137,6 +137,7 @@ section{
     color: #fff;
     font-size:medium;
     padding-right: 1rem;
+    padding-left:0.6rem;
     padding-bottom:0.5rem;
     border-top-right-radius:1rem ;
 }
@@ -598,20 +599,25 @@ width:100%;
         <div class="contenedor">
         <div class="contacto">
         <form>
-        <label class="block mb-2 ">Nombre Completo</label>
+        <label class="block mb-2 ">Nombre Completo <span class="text-blue-700 ml-1">*</span>
+        </label>
         <input id="nombre" type="text " class="nombre mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf1" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Teléfono</label>
+        <label class="block mb-2">Teléfono <span class="text-blue-700 ml-1">*</span>
+        </label>
         <input id="telefono" type="text" class="telefono mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf2" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Correo</label>
+        <label class="block mb-2">Correo <span class="text-blue-700 ml-1">*</span>
+        </label>
         <input id="correo" type="text" class="correo mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf3" class="text-left mb-4  text-Red hidden">Por favor ingresar una dirección de correo válido</p>
         <p id="pf4" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Asunto</label>
+        <label class="block mb-2">Asunto <span class="text-blue-700 ml-1">*</span>
+        </label>
         <input id="asunto" type="text" class="asunto mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf5" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Mensaje</label>
+        <label class="block mb-2">Mensaje <span class="text-blue-700 ml-1">*</span>
+        </label>
         <textarea id="msj" class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white"></textarea>
         <p id="pf6" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <input id="submit" type="button" value="Enviar" class="botonform"/>
