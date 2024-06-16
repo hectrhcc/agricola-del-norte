@@ -157,6 +157,10 @@ textarea{
         position: relative;
         top:0rem;
     }
+    .titulos-galeria{
+        font-size: small;
+    }
+
     }
         .carousel {
             display: flex;
@@ -211,19 +215,19 @@ textarea{
                 transition: transform 1.5s ease-in-out;
             }
             80% { 
-    transform: translateX(-400%);
-    transition: transform 1.5s ease-in-out;
-  }
+                transform: translateX(-400%);
+                transition: transform 1.5s ease-in-out;
+              }
 
-  95% {
-    transform: translateX(-400%);
-    transition: transform 1.5s ease-in-out;
-  }
+            95% {
+                transform: translateX(-400%);
+                transition: transform 1.5s ease-in-out;
+            }
 
-  100% {
-    transform: translateX(-500%);
-    transition: transform 1.5s ease-in-out;
-  }
+            100% {
+                transform: translateX(-500%);
+                transition: transform 1.5s ease-in-out;
+            }
         }
 
 .gallery{
@@ -247,12 +251,11 @@ textarea{
 	box-shadow: 0 0 6px rgba(0,0,0,.5);
 	cursor:pointer;
 }
-/* Estilos para el modal */
 .modal {
     background-color: rgba(0, 0, 0, 0.7);
     display: none; /* El modal está oculto por defecto */
     position: fixed;
-    z-index: 0;
+    z-index:0;
     left: 30%;
     top: 20%;
     width:50%;
@@ -569,7 +572,7 @@ width:100%;
     <img class="modal-content" src="">
 </div>
             <div class="mx-auto pt-8 pb-6 overflow-y-hidden"> 
-                <div class="contenedor-galeria">
+                <div class="contenedor-galeria max-md:flex max-md:flex-col max-md:mx-auto max-md:items-center">
                     <div ><span class="titulos-galeria ">Titulo galeria 1 </span>
                     <img src="./images/21.jpg" alt="" class="img-galeria " />
                     </div>   
@@ -580,12 +583,12 @@ width:100%;
                     <img src="./images/12.jpg" alt="" class=" img-galeria" >
                     </div> 
                     </div>
-                    <div class="contenedor-galeria ">
+                    <div class="contenedor-galeria max-md:flex max-md:flex-col max-md:items-center">
                     <div ><span class="titulos-galeria ">Titulo galeria 4 </span>
                     <img src="./images/13.jpg" alt="" class=" img-galeria" >
                     </div>
                     <div> <span class="titulos-galeria ">Titulo galeria 5 </span>    
-                    <img src="./images/2.jpg" alt="" class=" img-galeria">
+                    <img src="./images/15.jpg" alt="" class=" img-galeria">
                     </div>
                     <div><span class="titulos-galeria ">Titulo galeria 6 </span>
                     <img src="./images/26.jpg" alt="" class="img-galeria" >  

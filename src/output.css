@@ -914,6 +914,11 @@ video {
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .max-md\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -926,12 +931,28 @@ video {
     margin-right: 0.75rem;
   }
 
+  .max-md\:flex {
+    display: flex;
+  }
+
   .max-md\:hidden {
     display: none;
   }
 
   .max-md\:w-full {
     width: 100%;
+  }
+
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-md\:items-center {
+    align-items: center;
+  }
+
+  .max-md\:justify-center {
+    justify-content: center;
   }
 
   .max-md\:pb-6 {
