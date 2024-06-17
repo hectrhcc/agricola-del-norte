@@ -49,6 +49,9 @@
     background-position: center;
     background-repeat: no-repeat;
     }
+    .color{
+        color:rgb(246, 128, 107);
+    }
     footer{
     margin: 0 auto;
     }
@@ -71,6 +74,7 @@
    width:40%;
    margin-top:1.6rem;
 }
+
 .mapa{
     width:42%;
     margin-top:1.6rem;
@@ -229,7 +233,23 @@ textarea{
                 transition: transform 1.5s ease-in-out;
             }
         }
+.bienvenida{
+    padding-top:0.5rem;
+    padding-bottom:6.5rem;
+    color:#fff;
+    background-image: url(./images/24.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.bienvenida p{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 6px rgba(0,0,0,2.5);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    
+}
 .gallery{
 	background: #058e4b;
     padding-top:0.5rem;
@@ -308,11 +328,11 @@ body.modal-open {
 }
 
 .textos {
-  position: absolute;
+  /*position: absolute; cuando estabe en el carrusel
   top:30%;
-  left: 50%;
+  left: 50%;*/
   background-color: rgba(5, 46, 22, 0.5);
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
   border-radius: 5px;
 }
 
@@ -533,17 +553,15 @@ width:100%;
             <div class="cliente">
                 <div class="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item ">
-                            <div class="textos ">
-                                <h2 class="lg:text-4xl max-md:text-lg sm:text-2xl font-bold text-white text-center mb-4">Le damos la bienvenida</h2>
-                                <p class="font-semibold  max-md:hidden text-lg text-white text-center mb-4  flex justify-center items-center underline">Consulte nuestros productos y servicios que tenemos para usted.</p>
-                              </div>     
-                            <img src="./images/24.jpg" alt="Slide 1" class="w-full min-h-full">
+                        <div class="carousel-item ">   
+                            <img src="./images/5.jpg" alt="Slide 1" class="w-full min-h-full">
                              </div>
                         <div class="carousel-item">
+                            
                             <img src="./images/4.jpg" alt="Slide 2" class="w-full min-h-full">
                         </div>
                         <div class="carousel-item">
+                            
                             <img src="./images/19.jpg" alt="Slide 3" class="w-full min-h-full">
                         </div>
                         <div class="carousel-item">
@@ -566,7 +584,14 @@ width:100%;
         </div>  
       </div> 
     </section>
+    <section class="bienvenida">
+        <h1 class="block mt-9 mb-2 text-center text-green-600 font-bold sm:text-4xl max-md:text-3xl lg:text-5xl ">AGRICOLA DEL NORTE</h1>
+        <p class="mt-8 mb-8 text-justify mx-auto w-7/12 text-center sm:text-xl max-md:text-xs max-md:w-3/4 lg:text-2xl">Le damos la bienvenida a nuestro sitio web, donde nos comprometemos a proporcionar una información completa sobre nuestra empresa, incluyendo los valles que representamos, así como una amplia gama de productos y servicios. Nuestro enfoque se centra en fortalecer todas las áreas de la unidad productiva, desde lo técnico hasta lo humano y comercial, asegurando así un desarrollo sólido y sostenible en el sector agrícola.</p>
+
+        
+    </section>
     <section class=gallery id="galeria">
+        <h1 class="block mt-9 mb-2 text-center text-white font-bold sm:text-3xl max-md:text-2xl lg:text-4xl ">NUESTRAS ÁREAS DE TRABAJO</h1>
 <div class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" src="">
@@ -596,30 +621,30 @@ width:100%;
                 </div>
             </div>
         </section>
-    <section  >
+    <section>
         <div class="border-b border-gray-400 mb-6"></div>
-        <h1 class="block text-center text-green-600 lg:text-4xl "  id="contacto">Contacto</h1>
+        <h1 class="block mt-8 text-center text-green-600 font-bold lg:text-4xl max-md:text-2xl sm:text-3xl "  id="contacto">CONTACTO</h1>
         <div class="contenedor">
         <div class="contacto">
         <form>
-        <label class="block mb-2 ">Nombre <span class="text-blue-700 ml-1">*</span>
+        <label class="block mb-2 text-black ">Nombre <span class="text-blue-700 ml-1">*</span>
         </label>
         <input id="nombre" type="text " class="nombre mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf1" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Teléfono <span class="text-blue-700 ml-1">*</span>
+        <label class="block mb-2 text-black ">Teléfono <span class="text-blue-700 ml-1">*</span>
         </label>
         <input id="telefono" type="text" class="telefono mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf2" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Dirección de correo <span class="text-blue-700 ml-1">*</span>
+        <label class="block mb-2 text-black ">Dirección de correo <span class="text-blue-700 ml-1">*</span>
         </label>
         <input id="correo" type="text" class="correo mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf3" class="text-left mb-4  text-Red hidden">Por favor ingresar una dirección de correo válido</p>
         <p id="pf4" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Asunto <span class="text-blue-700 ml-1">*</span>
+        <label class="block mb-2 text-black ">Asunto <span class="text-blue-700 ml-1">*</span>
         </label>
         <input id="asunto" type="text" class="asunto mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
         <p id="pf5" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label class="block mb-2">Mensaje <span class="text-blue-700 ml-1">*</span>
+        <label class="block mb-2 text-black ">Mensaje <span class="text-blue-700 ml-1">*</span>
         </label>
         <textarea id="msj" class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white"></textarea>
         <p id="pf6" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
