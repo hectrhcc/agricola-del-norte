@@ -136,8 +136,7 @@ border-top-right-radius:1rem ;
 }
 
 textarea{
-resize: none;
-width:26.2rem; 
+width:18.2rem; 
 height:11em;
 }
 @media (min-width:320px) { 
@@ -353,7 +352,7 @@ left:68px;
    margin-bottom:2rem;
 }
 #msj {
-    width:21.3rem;
+    width:16.5rem;
 }
 .contacto{
     margin-left: 3rem;
@@ -417,16 +416,13 @@ height:13.1rem;
        height:auto;
        width:95%;
        text-align: center;
-
    }
-  
-  
    .titulos-galeria{
       font-size:small;
    }
    .mapa{
-       height:12.2rem;
-      
+       height:17rem;      
+       width:19rem;
    }
 }
 
@@ -457,6 +453,9 @@ width:85%;
 main{
 width:85%;
 }
+.contacto{
+    width:24%;
+}
 }
 @media (min-width:1440px){
 
@@ -470,7 +469,9 @@ width:85%;
 main{
 width:85%;
 }
-
+.contacto{
+    width:24%;
+}
 }
 /*Desktop*/
 @media (min-width:1600px){
@@ -485,7 +486,9 @@ width:85%;
 main{
 width:85%;
 }
-
+.contacto{
+    width:24%;
+}
 }
 
 @media (min-width:1220px){
@@ -498,6 +501,9 @@ width:85%;
 
 main{
 width:85%;
+}
+.contacto{
+    width:28%;
 }
 
 }
