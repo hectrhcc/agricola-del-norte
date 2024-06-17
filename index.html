@@ -15,7 +15,7 @@
      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
-    <title>Agricola del Norte</title>
+    <title>Agrícola del Norte</title>
     <style>
      body{
       font-family: 'Karla';
@@ -244,9 +244,11 @@ textarea{
 }
 
 .bienvenida p{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 6px rgba(0,0,0,2.5);
-    padding: 1rem;
+    padding:1rem;
+    margin: 2.2rem auto;
+
     border-radius: 0.3rem;
     
 }
@@ -520,7 +522,51 @@ align-items: center;
 font-size: larger;
 width:100%;
 }
+}
 
+@keyframes mostrarGaleria {
+from {
+  opacity: 0;
+  scale: 25%;
+}
+
+to {
+  opacity: 1;
+  scale: 100%;
+}
+}
+
+.fotos-move {
+view-timeline-name: --foto;
+animation-timeline: --foto;
+view-timeline-axis: block;
+animation-name: mostrarGaleria;
+animation-range: entry 0% cover 20%;
+animation-fill-mode: both;
+animation-direction:forwards;
+}
+
+
+@keyframes mostrarBienvenida {
+from {
+  opacity: 0;
+  scale: 5%;
+}
+
+to {
+  opacity: 1;
+  scale: 100%;
+}
+}
+
+.bienvenida-move {
+view-timeline-name: --foto;
+animation-timeline: --foto;
+view-timeline-axis: block;
+animation-name: mostrarBienvenida;
+animation-range: entry 0% cover 50%;
+animation-fill-mode: both;
+animation-direction:forwards;
 }
     </style>
     
@@ -531,7 +577,7 @@ width:100%;
             <img src="logo.png" class="logo  flex items-center justify-center top-0 h-auto "></img><!-- Logo -->
         </div>         
     </header>
-    <h2 class="relative inset-2 text-green-600 lg:hidden font-bold mt-0 p-0 flex items-center justify-center max-md:text-base sm:text-3xl   ">Agricola del Norte S.A.</h2><!-- Título -->        
+    <h2 class="relative inset-2 text-green-600 lg:hidden font-bold mt-0 p-0 flex items-center justify-center max-md:text-base sm:text-3xl   ">Agrícola del Norte S.A.</h2><!-- Título -->        
     <div class="flex flex-col">
         <h1 class="w-full z-10 mb-0 text-center text-green-600 text-4xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
 <nav class=" mt-2 mb-2  flex  items-center max-md:w-full sm:mt-4 sm:w-full " >
@@ -585,10 +631,10 @@ width:100%;
       </div> 
     </section>
     <section class="bienvenida">
+        <div class="bienvenida-move">
         <h1 class="block mt-9 mb-2 text-center text-green-600 font-bold sm:text-4xl max-md:text-3xl lg:text-5xl ">AGRICOLA DEL NORTE</h1>
         <p class="mt-8 mb-8 text-justify mx-auto w-7/12 text-center sm:text-xl max-md:text-xs max-md:w-3/4 lg:text-2xl">Le damos la bienvenida a nuestro sitio web, donde nos comprometemos a proporcionar una información completa sobre nuestra empresa, incluyendo los valles que representamos, así como una amplia gama de productos y servicios. Nuestro enfoque se centra en fortalecer todas las áreas de la unidad productiva, desde lo técnico hasta lo humano y comercial, asegurando así un desarrollo sólido y sostenible en el sector agrícola.</p>
-
-        
+        </div>
     </section>
     <section class=gallery id="galeria">
         <h1 class="block mt-9 mb-2 text-center text-white font-bold sm:text-3xl max-md:text-2xl lg:text-4xl ">NUESTRAS ÁREAS DE TRABAJO</h1>
@@ -596,10 +642,10 @@ width:100%;
     <span class="close">&times;</span>
     <img class="modal-content" src="">
 </div>
-            <div class="mx-auto pt-8 pb-6 overflow-y-hidden"> 
+            <div class="fotos-move  mx-auto pt-8 pb-6 overflow-y-hidden"> 
                 <div class="contenedor-galeria max-md:flex max-md:flex-col max-md:mx-auto max-md:items-center">
                     <div ><span class="titulos-galeria ">Titulo galeria 1 </span>
-                    <img src="./images/21.jpg" alt="" class="img-galeria " />
+                    <img src="./images/21.jpg" alt="" class="img-galeria  " />
                     </div>   
                     <div ><span class="titulos-galeria ">Titulo galeria 2 </span>
                     <img src="./images/7.jpg" alt="" class=" img-galeria" >
@@ -608,11 +654,13 @@ width:100%;
                     <img src="./images/12.jpg" alt="" class=" img-galeria" >
                     </div> 
                     </div>
+            </div>
+            <div class="fotos-move  mx-auto pt-2 pb-6 overflow-y-hidden"> 
                     <div class="contenedor-galeria max-md:flex max-md:flex-col max-md:items-center">
                     <div ><span class="titulos-galeria ">Titulo galeria 4 </span>
                     <img src="./images/13.jpg" alt="" class=" img-galeria" >
                     </div>
-                    <div> <span class="titulos-galeria ">Titulo galeria 5 </span>    
+                    <div> <span class="titulos-galeria ">Fertilizantes Fosfatados</span>    
                     <img src="./images/15.jpg" alt="" class=" img-galeria">
                     </div>
                     <div><span class="titulos-galeria ">Titulo galeria 6 </span>
@@ -688,7 +736,7 @@ width:100%;
         </ul>
     </div>
     </div>
-    <div class="text-center mt-1 pb-2 max-md:pb-6 sm:pb-8 ">Agricola del Norte S.A. Todos los derechos reservados.</div>    
+    <div class="text-center mt-1 pb-2 max-md:pb-6 sm:pb-8 ">Agrícola del Norte S.A. Todos los derechos reservados.</div>    
 </footer>
 <script src="script.js"></script>
 </div>
