@@ -119,6 +119,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color:#fcf3f3;
     margin-top: 0.25rem;
 }
+
 .medidas{
     width: 80%;
     margin: 0rem auto;
@@ -176,6 +177,7 @@ text-align: center;
 background-color: white;
 border-radius: 0.7rem;
 padding-top:0.8rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .cliente{
