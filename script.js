@@ -152,9 +152,9 @@ mensaje.addEventListener('blur', ()=>{
     imagenes.forEach(imagen =>{
         imagen.addEventListener('click', ()=>{
             modal.style.display = 'block'; 
-            modal.style.zIndex= '11';
+            modal.style.zIndex= '10';
             modalImg.src = imagen.src; 
-            imagen.style.zIndex = '10';
+            imagen.style.zIndex = '0';
             document.body.classList.add('modal-open'); 
         })
     })
@@ -166,7 +166,7 @@ mensaje.addEventListener('blur', ()=>{
     });
 
     var logo = document.querySelector('.logo');
-    logo.style.animation = 'emergeLogo 2s forwards'; // Cambia '1s' a la duración deseada de la animación
+    logo.style.animation = 'emergeLogo 2.5s forwards'; 
 //MAPA
     const map = L.map('map').setView([-18.50019,-70.28407], 17);
 
