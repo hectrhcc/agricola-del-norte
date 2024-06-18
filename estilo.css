@@ -698,7 +698,7 @@ font-size: larger;
 
 @media(min-width:200px) and (max-width:374px) {
    
-    .cacho{
+    nav{
         display:none;
     }    
         }
