@@ -587,6 +587,10 @@ margin: 0 auto;
     background-color:#E6E6E6;
 }
 
+nav{
+    margin:0 -3rem;
+}
+
 }
 /*Laptop*/
 @media (min-width:1280px){
