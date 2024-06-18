@@ -195,8 +195,6 @@ margin-left: -0.98rem;
 .titulos-galeria{
    font-size: small;
 }
-
-
 }
    .carousel {
        display: flex;
@@ -402,9 +400,7 @@ left:68px;
 .titulos-galeria{
 font-size: xx-small;
 }
-.mapa{
-    
-}
+
 }
 
 @media (max-width:640px) { 
@@ -440,8 +436,8 @@ height:13.1rem;
 
 }
 
- 
 }
+
 
 @media (min-width:767px) and (max-width:1100px) { 
    .movil{
@@ -609,6 +605,13 @@ font-size: larger;
 width:100%;
 }
 }
+
+@media(min-width:200px) and (max-width:374px) {
+    
+    .cacho{
+        display:none;
+    }    
+        }
 
 @keyframes mostrarGaleria {
 from {
