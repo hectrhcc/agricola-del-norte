@@ -182,13 +182,12 @@ mensaje.addEventListener('blur', ()=>{
 
   // Obtener el enlace de "HISTORIA"
   const linkHistoria = document.querySelector('a[href="./historia.html"]');
-        console.log(linkHistoria) 
-  // Agregar un evento de clic al enlace
+  const linkObjetivos = document.querySelector('a[href="./objetivos.html"]');
+  const linkpys = document.querySelector('a[href="./productosyservicios.html"]');
+  const linkbodega = document.querySelector('a[href="./bodega.html"]');
+
   linkHistoria.addEventListener('click', function(e) {
-      // Prevenir el comportamiento predeterminado del enlace (navegación a otra página)
       e.preventDefault();
-      
-      // Realizar la solicitud de historia.html usando fetch
       fetch('historia.html')
           .then(response => {
               if (!response.ok) {
@@ -198,13 +197,60 @@ mensaje.addEventListener('blur', ()=>{
           })
           .then(data => {
               console.log(data)
-              // Insertar el contenido de historia.html en el main
               const mainContent = document.getElementById('main-content');
               mainContent.innerHTML = data;
           })
           .catch(error => console.error('Error al cargar el contenido:', error));
-  
       });
+      linkObjetivos.addEventListener('click', function(e) {
+        e.preventDefault();
+        fetch('objetivos.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('La respuesta de la red no fue OK');
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(data)
+                const mainContent = document.getElementById('main-content');
+                mainContent.innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el contenido:', error));
+        });
+        linkpys.addEventListener('click', function(e) {
+            e.preventDefault();
+            fetch('productosyservicios.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('La respuesta de la red no fue OK');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log(data)
+                    const mainContent = document.getElementById('main-content');
+                    mainContent.innerHTML = data;
+                })
+                .catch(error => console.error('Error al cargar el contenido:', error));
+            });  
+            linkbodega.addEventListener('click', function(e) {
+                e.preventDefault();
+                fetch('bodega.html')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('La respuesta de la red no fue OK');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        console.log(data)
+                        const mainContent = document.getElementById('main-content');
+                        mainContent.innerHTML = data;
+                    })
+                    .catch(error => console.error('Error al cargar el contenido:', error));
+                });
+
 
 
 });
