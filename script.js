@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => { 
+  
+    
     let nombre = document.getElementById('nombre');
     let telefono = document.getElementById('telefono');
     let correo = document.getElementById('correo');
@@ -174,4 +176,35 @@ mensaje.addEventListener('blur', ()=>{
     maxZoom: 19,
     attribution: ' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
+
+
+
+
+  // Obtener el enlace de "HISTORIA"
+  const linkHistoria = document.querySelector('a[href="./historia.html"]');
+        console.log(linkHistoria) 
+  // Agregar un evento de clic al enlace
+  linkHistoria.addEventListener('click', function(e) {
+      // Prevenir el comportamiento predeterminado del enlace (navegación a otra página)
+      e.preventDefault();
+      
+      // Realizar la solicitud de historia.html usando fetch
+      fetch('historia.html')
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('La respuesta de la red no fue OK');
+              }
+              return response.text();
+          })
+          .then(data => {
+              console.log(data)
+              // Insertar el contenido de historia.html en el main
+              const mainContent = document.getElementById('main-content');
+              mainContent.innerHTML = data;
+          })
+          .catch(error => console.error('Error al cargar el contenido:', error));
+  
+      });
+
+
 });
