@@ -1,5 +1,6 @@
 body{
  font-family: 'Karla';
+ overflow-x: hidden;
 }   
 input, textarea {
 outline: none;
@@ -438,6 +439,7 @@ height:13.1rem;
 
 
 @media (min-width:767px) and (max-width:1100px) { 
+
    .movil{
        font-size: small;
        position:relative;
@@ -600,7 +602,7 @@ font-size: larger;
 }
 
 @media(min-width:200px) and (max-width:374px) {
-    
+   
     .cacho{
         display:none;
     }    
