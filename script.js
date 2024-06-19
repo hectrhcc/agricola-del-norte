@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => { 
+    let contactoLink = document.getElementById('econtacto');
+    contactoLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Recargar la página
+        location.reload();
+    });
   //Script de Contacto
   const map = L.map('map').setView([-18.50019,-70.28407], 17);
     
