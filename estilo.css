@@ -36,8 +36,7 @@ background-image: url(./images/portada.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-
-background-color: #E6E6E6;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .logo{
     z-index:10;
@@ -69,6 +68,8 @@ height:3rem;
 .contact{
     width:100% ;
     margin: 0 auto;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .contenedor{
 display: flex;
@@ -100,11 +101,12 @@ border-radius:0.3rem;
 margin-top:1rem;
 color:#fff;
 }
-section{
+#inicio{
 width:100%;
-background-color:beige;
+background-color:#E1DB9C;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
 .ul{
     padding-top: 0;
     padding-bottom: 0;
@@ -203,38 +205,40 @@ height:11em;
 .iny:hover, .rs:hover, .hyst:hover, .obje:hover, .pys:hover , .conta:hover , .bod:hover{
 text-decoration:underline;
 color:#0dc84e;
+background-color: #FFF9AF;
 }
 .pys{
 color:#16A34A;
 padding-top: 0.2rem;
 padding-bottom: 0.1rem;
-background-color:beige;
+background-color:#E1DB9C;
 }
 .rs{
     padding-top: 0.4rem;
     padding-bottom: 0.2rem;
-    background-color:beige;
+    background-color:#E1DB9C;
     color:#16A34A;
 }
 .iny{
 margin-left: -0.98rem;
-background-color:beige;
+background-color:#E1DB9C;
 color:#16A34A;
+border-top-left-radius:1rem ;
 }
 .hyst{
-    background-color:beige;
+    background-color:#E1DB9C;
     color:#16A34A;
 }
 .conta{
-    background-color:beige;
+    background-color:#E1DB9C;
     color:#16A34A;
 }
 .obje{
-    background-color:beige;
+    background-color:#E1DB9C;
     color:#16A34A;
 }
 .bod{
-    background-color:beige;
+    background-color:#E1DB9C;
     color:#16A34A;
     margin-right:0rem;
     padding-left:0rem;
@@ -242,6 +246,7 @@ color:#16A34A;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     width:15%;
+    border-top-right-radius:1rem ;
 }
 
 
@@ -334,6 +339,7 @@ background-image: url(./images/24.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .bienvenida p{
@@ -348,7 +354,8 @@ border-radius: 0.3rem;
 .gallery{
 background:#0e5d2f;
 padding-top:0.5rem;
-padding-bottom:6rem ;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+padding-bottom:2rem ;
 }
 
 .contenedor-galeria{
@@ -426,9 +433,7 @@ color: tomato;
 }
 }
 
-
 .boton{
-
 position: relative;
 left:68px;
 }
@@ -505,11 +510,9 @@ height:10rem;
 width:42%;
 margin-top: 1rem;
 height:13.1rem;
-
 }
 
 }
-
 
 @media (min-width:767px) and (max-width:1100px) { 
 
@@ -578,7 +581,6 @@ width:10%;
     margin: 0;
     max-height:3.5rem;
     background-color:transparent;
-
 }
 .cacho{
 width: 85%;
@@ -590,7 +592,17 @@ margin: 0 auto;
 }
 
 nav{
-    margin:0 -3rem;
+    margin:-0.1rem -3rem;
+    
+}
+
+.pys{
+    text-align: center;
+    border: 1px solid #A2A9AF;
+}
+.prod{
+    width:12.5rem;
+    
 }
 
 }
