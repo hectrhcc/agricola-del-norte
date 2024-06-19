@@ -5,7 +5,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: ' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-
 let nombre = document.getElementById('nombre');
 let telefono = document.getElementById('telefono');
 let correo = document.getElementById('correo');
@@ -19,9 +18,7 @@ let p4 = document.getElementById('pf4');
 let p5 = document.getElementById('pf5');
 let p6 = document.getElementById('pf6');
 
-
 const email = correo.value.trim(); 
-
 
 function isValidEmail(email) {
 
@@ -39,8 +36,6 @@ function hideErrorText() {
 p3.style.display = 'none'; 
 }
 
-
-
 correo.addEventListener('blur', () => {
 const emailValue = correo.value.trim();
 
@@ -55,7 +50,6 @@ if (emailValue === '') {
     p4.style.display = 'none';
 }
 });
-
 
 submit.addEventListener('click',(e)=>{
 e.preventDefault();
