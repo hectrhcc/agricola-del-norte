@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactoLink.addEventListener('click', function(e) {
          // Prevenir el comportamiento por defecto del enlace
          e.preventDefault();
-        
+         location.reload();
          // Recargar la página
          window.location.href = this.href;
     });
