@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => { 
     let contactoLink = document.getElementById('econtacto');
-    contactoLink.addEventListener('click', function(e) {
+    contactoLink.addEventListener('click', function() {
          // Prevenir el comportamiento por defecto del enlace
-         e.preventDefault();
+         
          location.reload();
          // Recargar la página
          window.location.href = this.href;
