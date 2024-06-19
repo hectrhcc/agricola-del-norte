@@ -1,17 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => { 
-    let contactoLink = document.getElementById('econtacto');
-    contactoLink.addEventListener('click', function() {
-        e.preventDefault();
-        
-        // Recargar la página sin el fragmento
-        window.location.href = this.href.split('#')[0];
-        
-        // Esperar a que la página se recargue completamente
-        window.onload = function() {
-            // Navegar a la sección #contacto
-            window.location.hash = 'contacto';
-        };
-    });
+   
   //Script de Contacto
   const map = L.map('map').setView([-18.50019,-70.28407], 17);
     
