@@ -17,13 +17,32 @@
         background-color: #0e5d2f;
         color:#D7D5DB;
     }
+    .imagen{
+        animation: aparecerDesdeIzq 0.5s ease forwards;
+    }
+    img{
+    view-timeline-name: --title;
+    animation-timeline: --title;
+    animation-name:  aparecerDesdeIzq;
+    animation-range: entry 0% cover 30%;
+    animation-fill-mode: both;
+    animation-direction:forwards;
+    }
+    @keyframes aparecerDesdeIzq {
+    from {
+    transform: translateX(-100%); 
+    }   
+    to {
+    transform: translateX(0);
+    }
+}
 </style>
 <body>  
     <main>
         <h1 class="block  pt-8 mb-2 text-center text-white font-bold sm:text-3xl max-md:text-2xl lg:text-4xl">RESEÑA HISTÓRICA</h1>
         
         <p class="w-8/12 font-semibold flex justify-center text-justify content-center items-center  pt-6 mx-auto ">Agrícola del Norte S.A. es una  empresa Ariqueña, fundada el 28 de Diciembre del año 1989, por los medianos y pequeños agricultores de todo los valles de la XV Región. Es una a la vanguardia como una alternativa más para el desarrollo y progreso de los agricultores de la zona y la ciudad; aprovechando sus fortalezas de más de 400 accionistas que se dan las mismas oportunidades de una agricultura futurista y progresiva mediante la tecnificación de los diversos sistemas de riego.</p>
-        <img src="./images/5.jpg" class="mx-auto w-1/2 mt-8 mb-2"> 
+        <img src="./images/5.jpg" class="imagen mx-auto w-1/2 mt-8 mb-2"> 
          <h1 class="block  pt-8 mb-2 text-center text-white font-bold sm:text-3xl max-md:text-2xl lg:text-4xl">SALA DE VENTAS</h1>
         <p class="w-8/12 font-semibold flex justify-center text-justify content-center items-center  pt-6 mx-auto ">Ofrece a sus asociados y agricultores una amplia gama de artículos para sistemas de riego tecnificado, desde motobombas y filtros de discos, hasta goteros de la mejor calidad, así mismo encontrara fertilizantes, pesticidas e insumos en general de las mejores clases y precios convenientes, además de nuestra asistencia técnica para usted con visitas a terreno y seguimiento productivo.</p>
         <img src="./images/9.jpg" class="mx-auto w-1/2 mt-8 mb-2"> 
