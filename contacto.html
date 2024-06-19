@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Agrícola del Norte</title>
+</head>
+<style>
+    main{
+        background-color: #0e5d2f;
+        color:#D7D5DB;
+    }
+</style>
+<body>  
+    <main>
+        <section class="contact">
+            <div class="border-b border-gray-400 mb-6"></div>
+            <h1 class="block mt-8 text-center text-green-600 font-bold lg:text-4xl max-md:text-2xl sm:text-3xl "  id="contacto">CONTACTO</h1>
+            <div class="contenedor">
+            <div class="contacto">
+            <form>
+            <label class="block mb-2 text-black ">Nombre <span class="text-blue-700 ml-1">*</span>
+            </label>
+            <input id="nombre" type="text " class="nombre mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+            <p id="pf1" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
+            <label class="block mb-2 text-black ">Teléfono <span class="text-blue-700 ml-1">*</span>
+            </label>
+            <input id="telefono" type="text" class="telefono mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+            <p id="pf2" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
+            <label class="block mb-2 text-black max-md:w-full ">E-mail <span class="text-blue-700 ml-1">*</span>
+            </label>
+            <input id="correo" type="text" class="correo mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+            <p id="pf3" class="text-left mb-4  text-Red hidden">Por favor ingresar una dirección de correo válido</p>
+            <p id="pf4" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
+            <label class="block mb-2 text-black ">Asunto <span class="text-blue-700 ml-1">*</span>
+            </label>
+            <input id="asunto" type="text" class="asunto mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+            <p id="pf5" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
+            <label class="block mb-2 text-black ">Mensaje <span class="text-blue-700 ml-1">*</span>
+            </label>
+            <textarea id="msj" class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white"></textarea>
+            <p id="pf6" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
+            <input id="submit" type="button" value="Enviar" class="botonform"/>
+            </form>
+            </div>
+            <div id="map" class="mapa"></div>
+        </div>
+        </section>
+    </main>
+</div>
+<script src="mapa.js"></script>
+</body>
+</html>
