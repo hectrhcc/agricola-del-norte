@@ -643,6 +643,10 @@ width:85%;
     width:76%;
     
 }
+nav{
+    margin:-0.1rem -3rem;
+}
+
 }
 /*Desktop*/
 @media (min-width:1600px){
