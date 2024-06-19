@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => { 
     let contactoLink = document.getElementById('econtacto');
     contactoLink.addEventListener('click', function() {
-        
-        // Recargar la página
+    // Recargar la página
         location.reload();
+    // Navegar a la sección #contacto después de que la página se haya recargado
+         window.location.href = "https://agricola-del-norte.vercel.app/index.html#contacto";
     });
   //Script de Contacto
   const map = L.map('map').setView([-18.50019,-70.28407], 17);
