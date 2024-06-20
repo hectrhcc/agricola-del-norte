@@ -752,7 +752,7 @@ width:85%;
     width:76%;
 }
 .navegar{
-    margin:0 18rem;
+    margin:0 16rem;
 }
 .red{
     position: relative;
@@ -785,6 +785,11 @@ width:85%;
     width:69%;
     
 }
+.navegar{
+    position: relative;
+    right:3rem;
+    max-width:70%;
+}
 }
 
 @media (min-width:1220px){
@@ -806,7 +811,7 @@ width:85%;
 
 @media (min-width: 1500px) and (max-width: 1700px) {
 .navegar{
-    margin: 0 23rem;
+    margin: 0 18rem;
     max-width:74%;
 }
 .bod{
@@ -815,7 +820,7 @@ width:85%;
 }
 @media (min-width: 1700px) and (max-width: 1900px) {
     .navegar{
-        margin: 0 23rem;
+        margin: 0 26rem;
         max-width:74%;
     }
 }
@@ -826,24 +831,24 @@ nav {
     max-width:71%;
 }
 .navegar{
-    margin: 0 30rem;
+    margin: 0 33rem;
 }
 }
 @media (min-width:2100px) and (max-width: 2299px) {
     .navegar {
-       margin: 0 35rem;
+       margin: 0 38rem;
        width:50%;
     }
 }
 @media (min-width:2300px) and (max-width: 2599px) {
 .navegar {
-   margin: 0 39rem;
+   margin: 0 44.5rem;
    width:50%;
 }
 }
 @media(min-width:2600px){
 .navegar{
-margin:0 40rem;
+margin:0 45rem;
 font-size: larger;
 width:70%;
 }
@@ -856,18 +861,30 @@ width:70%;
 }
 }
 
-@media(min-width:3000px){
+@media(min-width:2900px){
     .pys{
         width:15%;
         line-height: 1rem;
     }
     .navegar{
         width:65%;
-        margin: 0 49rem;
+        margin: 0 52rem;
     }
     .bod{
         max-width:11%;
     }
+}
+@media(min-width:3000px){
+    .navegar{
+        width:65%;
+        margin: 0 56rem;
+}
+}
+@media(min-width:3100px){
+    .navegar{
+        width:65%;
+        margin: 0 59rem;
+}
 }
 
 @media(min-width:200px) and (max-width:579px) {
