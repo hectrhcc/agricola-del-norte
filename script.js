@@ -252,11 +252,10 @@ let prod = document.getElementById('productos');
 let cont= document.getElementById('contacto');
 let red = document.getElementById('redsocial');
 let bod= document.getElementById('bodega');
-let navegar=document.getElementsByClassName('navegar');
-console.log(navegar);
+let navmovil=document.getElementById('navmovil');
+console.log(navmovil);
 hamburguesa.addEventListener('click', ()=>{
-    
-    navegar.style.display = 'block'; 
+    navmovil.style.display = 'block'; 
 })
 
 
