@@ -172,6 +172,7 @@ height: auto;
     justify-content: flex-end;
     padding-top:0.3rem;
     padding-left:0.3rem;
+    display: none;
 }
 
 @media (min-width:1800px){
@@ -557,18 +558,16 @@ height:13.1rem;
    
    
 }
-@media (min-width:767px) and (max-width:1100px) { 
-    .hamburguesa{
-        display: none;
-    }
+@media (min-width:767px) and (max-width:1024px) { 
+    
    .movil{
-       font-size: small;
-       position:relative;
-       top:0px;
-       left:3%;
-       height:auto;
+       font-size:x-small;
+       margin: 0 4rem;
+       height:2.2rem;
        width:95%;
        text-align: center;
+       position: relative;
+       top:0.6rem;
    }
    .titulos-galeria{
       font-size:small;
@@ -594,24 +593,57 @@ height:13.1rem;
    .container{
     min-width: 100%;
    }
+   .bod{
+    width:4rem;
+   }
+  
+}
+
+@media (min-width:800px) and (max-width:900px) { 
+    .navegar{
+        margin: 0 4.2rem;
+        width:50%;  
+        }
+
+    .prod, .red{
+        line-height:0.6rem;
+    }
+
+}
+@media (min-width:900px) and (max-width:1000px) { 
+    .navegar{
+        margin: 0 8rem;       
+        width:50%;
+        
+        }
+        .prod, .red{
+            line-height:0.6rem;
+        }
+
+}
+@media (min-width:1000px) and (max-width:1024px) { 
+    .navegar{
+        margin: 0 9rem;       
+        width:50%;       
+        }
+        .prod, .red{
+            line-height:0.6rem;
+        }
+
 }
 
 @media (min-width:1024px){
-    .hamburguesa{
-        display: none;
-    }
+    
 .movil{
-background-color: white;
 padding:0.4rem;
 position:relative;
 display: flex;
 flex-direction: row;
-top:0px;
-left:20%;
 height:auto;
 width:66%;
 text-align: center;
-line-height:1.1;    
+line-height:1;    
+margin: 0 auto;
 }
 .titulos-galeria{
 font-size: medium;
@@ -623,8 +655,13 @@ font-size: medium;
     width:86%;
     
 }
+.navegar{ 
+    margin: 0 auto;
+    font-size: small;
+    height:2.5rem;
+}
 .bod{
-width:10%;
+width:16%;
 }
 .ul{
     padding-top: 0;
@@ -642,20 +679,35 @@ margin: 0 auto;
     background-color:#E6E6E6;
 }
 
-nav{
-    margin:-0.1rem -5.9rem;
+.navegar{
+    margin:0 6rem;
+    top:0.2rem;
+    position: relative;
 }
-
-
+.pys{
+    width:26%;
+}
 .prod{
     width:12.5rem;
-    
+
 }
 main, footer{
     width:85%;
     }
 
 }
+
+@media (min-width:1054px){
+.navegar{
+    margin: 0 7rem;
+}
+}
+@media (min-width:1150px){
+    .navegar{
+        margin: 0 9rem;
+    }
+    }
+
 /*Laptop*/
 @media (min-width:1280px){
 footer{
@@ -668,6 +720,17 @@ width:85%;
 .contacto{
     width:24%;
 }
+.navegar{
+    margin: 0 11rem;
+}
+.pys{
+    width:20%;
+}
+.red{
+    min-width:5rem;
+}
+
+
 }
 @media (min-width:1440px){
 
@@ -689,12 +752,14 @@ width:85%;
     margin: 0 auto;
     gap:0.1rem;
     width:76%;
-    
 }
-nav{
-    margin:-0.1rem -3rem;
+.navegar{
+    margin:0 18rem;
 }
-
+.red{
+    position: relative;
+    top:-0.1rem;
+}
 }
 /*Desktop*/
 @media (min-width:1600px){
@@ -735,36 +800,74 @@ width:85%;
 .contacto{
     width:28%;
 }
-.bod{
-    padding-right:6rem;
-}
+
 }
 
 @media (min-width: 1500px) and (max-width: 1900px) {
-nav {
-    margin:0 auto;
+
+.navegar{
+    margin: 0 16rem;
+    max-width:74%;
+}
+.bod{
+    width:13%;
 }
 }
 
-@media (min-width: 1901px) and (max-width: 2100px) {
+@media (min-width: 1901px) and (max-width: 2099px) {
 nav {
     margin: 0 auto;
+    max-width:71%;
+}
+.navegar{
+    margin: 0 30rem;
 }
 }
-@media (min-width:2100px) and (max-width: 2599px) {
-nav {
-   margin: 0 17rem;
+@media (min-width:2100px) and (max-width: 2299px) {
+    .navegar {
+       margin: 0 35rem;
+       width:50%;
+    }
+}
+@media (min-width:2300px) and (max-width: 2599px) {
+.navegar {
+   margin: 0 39rem;
+   width:50%;
 }
 }
 @media(min-width:2600px){
-nav{
-margin:0 20rem;
+.navegar{
+margin:0 40rem;
 font-size: larger;
-
+width:70%;
+}
+.bod{
+    max-width:9%;
+}
+.pys{
+    width:15%;
+    line-height: 1rem;
 }
 }
 
-@media(min-width:200px) and (max-width:580px) {
+@media(min-width:3000px){
+    .pys{
+        width:15%;
+        line-height: 1rem;
+    }
+    .navegar{
+        width:65%;
+        margin: 0 49rem;
+    }
+    .bod{
+        max-width:11%;
+    }
+}
+
+@media(min-width:200px) and (max-width:579px) {
+    .hamburguesa{
+        display: block;
+    }
     .modal{
         position: fixed;
         width:24.2rem;
@@ -773,7 +876,8 @@ font-size: larger;
     .navegar{
         display: none;
     }    
-        }
+}
+
 
 @keyframes mostrarGaleria {
 from {
