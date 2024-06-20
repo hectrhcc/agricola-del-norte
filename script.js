@@ -245,13 +245,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                
 let hamburguesa = document.getElementById('hamburguesa');
-let ini = document.getElementById('in');
-let hist = document.getElementById('historia');
-let obj = document.getElementById('objetivos');
-let prod = document.getElementById('productos');
-let cont= document.getElementById('contacto');
-let red = document.getElementById('redsocial');
-let bod= document.getElementById('bodega');
 let navmovil=document.getElementById('navmovil');
 let closemovil=document.getElementById('closemovil');
 
