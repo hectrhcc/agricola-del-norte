@@ -244,4 +244,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     .catch(error => console.error('Error al cargar el contenido:', error));
                 });
                
+let hamburguesa = document.getElementById('hamburguesa');
+let ini = document.getElementById('in');
+let hist = document.getElementById('historia');
+let obj = document.getElementById('objetivos');
+let prod = document.getElementById('productos');
+let cont= document.getElementById('contacto');
+let red = document.getElementById('redsocial');
+let bod= document.getElementById('bodega');
+let navegar=document.getElementsByClassName('navegar');
+console.log(navegar);
+hamburguesa.addEventListener('click', ()=>{
+    
+    navegar.style.display = 'block'; 
+})
+
+
 });

@@ -899,8 +899,54 @@ width:70%;
         margin-left:-7.2rem;
     }
     .navegar{
-        display: none;
+        display: flex;
+        background-color: #fff;
+        width:80%;
+        height:32rem;
+        position: absolute;
+        top:-9.3rem;
+        left:-8rem;
+        border:2px solid black;
+        z-index: 99;
     }    
+    .ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom:8rem;
+        z-index: 99;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        border:1px solid red;
+        min-height: 100%;
+    }
+
+    .iny, .hyst, .obje, .pys, .conta, .rs, .bod{
+        background-color:beige!important ;
+        color:#0e5d2f;
+        border: none;
+        border-radius: 0;
+        min-height:3rem;
+       display: block;
+        border:2px solid gray;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left:2.5rem;
+        position: relative;
+        top:8.6rem;
+        font-size:medium;
+    }
+
+    .in, .red, .ob, .hi, .co, .warehouse{
+        position: relative;
+        top:0.5rem;
+    }
+    .prod{
+        max-width:40% ;
+        margin-left:6.5rem;
+        position: relative;
+        top:0.4rem;
+    }
 }
 
 
