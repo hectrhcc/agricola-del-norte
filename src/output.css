@@ -891,18 +891,6 @@ video {
     position: relative;
   }
 
-  .max-md\:right-4 {
-    right: 1rem;
-  }
-
-  .max-md\:right-12 {
-    right: 3rem;
-  }
-
-  .max-md\:right-1 {
-    right: 0.25rem;
-  }
-
   .max-md\:right-24 {
     right: 6rem;
   }
@@ -930,10 +918,6 @@ video {
 
   .max-md\:hidden {
     display: none;
-  }
-
-  .max-md\:w-1\/2 {
-    width: 50%;
   }
 
   .max-md\:w-11\/12 {

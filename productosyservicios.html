@@ -17,27 +17,35 @@
         background-color: #0e5d2f;
         color:#D7D5DB;
     }
-    
     .i1, .i2, .i3{
-        width:65%;
-        
+        width:65%;   
         margin:1.5rem auto;
     }
     .padre{
-        display: flex;
-        
+        display: flex; 
     }
     .hijo2{
         display: inline;
-        width:60%;
-        position: relative;
-        left:5rem;
+        width:120%;
+        margin-left:1rem;
     }
     .hijo1{
         display: inline;
-        width:40%;
+        width:85%;
     }
-
+    @media (max-width:766px){
+        .padre{
+            display: flex;
+            flex-direction: column;
+        }
+         .hijo2{
+            min-width:120%;
+            margin-left:2rem;
+        }
+        .hijo1{
+            width:100%;
+        }
+    }
 </style>
 <body>  
     <main>
