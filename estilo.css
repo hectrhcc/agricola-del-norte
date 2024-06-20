@@ -261,9 +261,6 @@ border-top-left-radius:1rem ;
     width:15%;
     border-top-right-radius:1rem ;
 }
-
-
-
    .carousel {
        display: flex;
        overflow: hidden;
@@ -476,10 +473,14 @@ nav{
     top:-0.3rem;
 }
 }
-
-
+@media(min-width:580px){
+    .closemovil{
+        display: none;
+    }
+}
 
 @media (max-width:641px) { 
+    
    .movil{
        
        position:relative;
@@ -967,6 +968,14 @@ width:70%;
         margin: 0 auto;
         position: relative;
         top:0.4rem;
+    }
+    .logo{
+        position: relative;
+        top:-1.5rem;
+    }
+    .title{
+        position: relative;
+        top:-1.3rem;
     }
 }
 
