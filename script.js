@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalImg = document.querySelector('.modal-content')
     const cerrar = document.querySelector('.close')
     const movil = document.querySelector('.movil')
-
+    
 
     imagenes.forEach(imagen =>{
         imagen.addEventListener('click', ()=>{
@@ -253,10 +253,18 @@ let cont= document.getElementById('contacto');
 let red = document.getElementById('redsocial');
 let bod= document.getElementById('bodega');
 let navmovil=document.getElementById('navmovil');
+let closemovil=document.getElementById('closemovil');
+
 console.log(navmovil);
 hamburguesa.addEventListener('click', ()=>{
     navmovil.style.display = 'block'; 
+    closemovil.style.display = 'block'; 
 })
 
+closemovil.addEventListener('click', ()=>{
+    navmovil.style.display = 'none'; 
+    closemovil.style.display ='none';
+
+})
 
 });

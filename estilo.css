@@ -893,16 +893,34 @@ width:70%;
     .hamburguesa{
         display: block;
     }
+
+    @keyframes aparecerDesdeIzq {
+        from {
+        transform: translateX(-100%); 
+        }   
+        to {
+        transform: translateX(0);
+        }
+    }
     #navmovil{
         display: none;
+        animation: aparecerDesdeIzq 0.3s forwards;
     }
     .modal{
         position: fixed;
         width:24.2rem;
         margin-left:-7.2rem;
     }
+    .closemovil{
+        display: none;
+        position: absolute;
+        left:0;
+        top:0;
+        width:5%;
+        z-index: 999;
+        animation: aparecerDesdeIzq 0.4s forwards;
+    }
     .navegar{
-        
         background-color: #fff;
         width:80%;
         height:36rem;
