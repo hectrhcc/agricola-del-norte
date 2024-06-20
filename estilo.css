@@ -914,9 +914,9 @@ width:70%;
     .closemovil{
         display: none;
         position: absolute;
-        left:0;
-        top:0;
-        width:5%;
+        left:0.2rem;
+        top:0.2rem;
+        width:6.5%;
         z-index: 999;
         animation: aparecerDesdeIzq 0.4s forwards;
     }
@@ -953,7 +953,7 @@ width:70%;
         position: relative;
         left:3.5rem;
         position: relative;
-        top:8.6rem;
+        top:8.76rem;
         font-size:medium;
     }
 
@@ -964,6 +964,7 @@ width:70%;
     .prod{
         max-width:36% ;
         margin-left:6rem;
+        margin: 0 auto;
         position: relative;
         top:0.4rem;
     }
