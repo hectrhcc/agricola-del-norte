@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let telefono = document.getElementById('telefono');
   let correo = document.getElementById('correo');
   let asunto = document.getElementById('asunto');
-  let mensaje = document.getElementById('msj');
-  let submit = document.getElementById('button');
+  let mensaje = document.getElementById('mensaje');
+  //let submit = document.getElementById('button');
   let p1 = document.getElementById('pf1');
   let p2 = document.getElementById('pf2');
   let p3 = document.getElementById('pf3');
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   });
   
-  submit.addEventListener('click',(e)=>{
+  /*submit.addEventListener('click',(e)=>{
   e.preventDefault();
   
   const emailValue = correo.value.trim();
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   })
-  
+  */
   nombre.addEventListener('blur', ()=>{
   if(nombre.value.trim()===''){
       p1.style.display='block';
@@ -255,27 +255,5 @@ closemovil.addEventListener('click', ()=>{
 
 })
 
-//Enviar correos
-emailjs.init('eNxWZ4qH5D6z_YoaK')
-const btn = document.getElementById('button');
-const form = document.getElementById('form');
-
-form.addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Enviando...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_hnfqzrh';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Enviar Mensaje';
-      alert('Mensaje Enviado!');
-    }, (err) => {
-      btn.value = 'Enviar Mensaje';
-      alert(JSON.stringify(err));
-    });
-});
 
 });

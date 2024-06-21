@@ -134,7 +134,7 @@
         <p id="pf5" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <label for="mensaje" class="block mb-2 text-black ">Mensaje <span class="text-blue-700 ml-1">*</span>
         </label>
-        <textarea id="msj" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white"></textarea>
+        <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white"></textarea>
         <p id="pf6" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <input id="button" type="submit" value="Enviar" class="botonform"/>
         </form>
@@ -170,7 +170,35 @@
     <div class="text-center mt-1 pb-2 max-md:pb-6 sm:pb-8 ">Agrícola del Norte S.A. Todos los derechos reservados.</div>    
 </footer>
 </div>
-<script src="script.js"></script>
 </div>
+<script src="script.js"></script>
+<script type="text/javascript">
+    // Inicializar EmailJS con tu User ID
+    emailjs.init('eNxWZ4qH5D6z_YoaK');
+
+    // Enviar correos
+    const form = document.getElementById('form');
+    const btn = document.getElementById('button');
+    console.log(form);
+    console.log(btn);
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      btn.value = 'Enviando...';
+      console.log("estoy adentro");
+      console.log(btn.value);
+      const serviceID = 'default_service';
+      const templateID = 'template_hnfqzrh';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(function(response) {
+          btn.value = 'Enviar';
+          console.log("estoy adentro 2");
+          alert('Mensaje enviado correctamente!');
+        }, function(error) {
+          btn.value = 'Enviar';
+          alert('Error al enviar el mensaje. Error: ' + JSON.stringify(error));
+        });
+    });
+  </script>
 </body>
 </html>
