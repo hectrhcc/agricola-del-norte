@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   isValidEmail(emailValue) &&
   asunto.value.trim() !== '' &&
   mensaje.value.trim() !== '') {
-  alert("Mensaje enviado!\nGracias por completar el formulario. ¡Nos pondremos en contacto pronto!");
+  console.log("Mensaje enviado!\nGracias por completar el formulario. ¡Nos pondremos en contacto pronto!");
   }
   
   })
@@ -189,7 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
               return response.text();
           })
           .then(data => {
-              console.log(data)
               const mainContent = document.getElementById('main-content');
               mainContent.innerHTML = data;
           })
@@ -205,7 +204,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return response.text();
             })
             .then(data => {
-                console.log(data)
                 const mainContent = document.getElementById('main-content');
                 mainContent.innerHTML = data;
             })
@@ -221,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return response.text();
                 })
                 .then(data => {
-                    console.log(data)
+
                     const mainContent = document.getElementById('main-content');
                     mainContent.innerHTML = data;
                 })
@@ -237,18 +235,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         return response.text();
                     })
                     .then(data => {
-                        console.log(data)
                         const mainContent = document.getElementById('main-content');
                         mainContent.innerHTML = data;
                     })
                     .catch(error => console.error('Error al cargar el contenido:', error));
                 });
-               
+//Hamburguesa para la version movil              
 let hamburguesa = document.getElementById('hamburguesa');
 let navmovil=document.getElementById('navmovil');
 let closemovil=document.getElementById('closemovil');
-
-console.log(navmovil);
 hamburguesa.addEventListener('click', ()=>{
     navmovil.style.display = 'block'; 
     closemovil.style.display = 'block'; 
@@ -259,5 +254,29 @@ closemovil.addEventListener('click', ()=>{
     closemovil.style.display ='none';
 
 })
+
+//Enviar correos
+emailjs.init('eNxWZ4qH5D6z_YoaK')
+
+const btn = document.getElementById('submit');
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+event.preventDefault();
+
+btn.value = 'Enviando...';
+
+const serviceID = 'default_service';
+const templateID = 'template_hnfqzrh';
+
+emailjs.sendForm(serviceID, templateID, this)
+.then(() => {
+  btn.value = 'Enviar mensaje';
+  alert('Mensaje enviado!');
+}, (err) => {
+  btn.value = 'Enviar mensaje';
+  alert(JSON.stringify(err));
+});
+});
+
 
 });
