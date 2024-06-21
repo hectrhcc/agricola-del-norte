@@ -117,24 +117,24 @@
         <form id="form">
         <label class="block mb-2 text-black " for="nombre">Nombre <span class="text-blue-700 ml-1">*</span>
         </label>
-        <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombre mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+        <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombre mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
         <p id="pf1" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <label for="telefono" class="block mb-2 text-black ">Teléfono <span class="text-blue-700 ml-1">*</span>
         </label>
-        <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefono mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+        <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefono mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
         <p id="pf2" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <label for="correo" class="block mb-2 text-black max-md:w-full ">E-mail <span class="text-blue-700 ml-1">*</span>
         </label>
-        <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correo mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+        <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correo mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
         <p id="pf3" class="text-left mb-4  text-Red hidden">Por favor ingresar una dirección de correo válido</p>
         <p id="pf4" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <label for="asunto" class="block mb-2 text-black ">Asunto <span class="text-blue-700 ml-1">*</span>
         </label>
-        <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asunto mb-2 rounded border border-gray-400 border-solid border-3 block bg-white">
+        <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asunto mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
         <p id="pf5" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <label for="mensaje" class="block mb-2 text-black ">Mensaje <span class="text-blue-700 ml-1">*</span>
         </label>
-        <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white"></textarea>
+        <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required></textarea>
         <p id="pf6" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
         <input id="button" type="submit" value="Enviar" class="botonform"/>
         </form>
@@ -173,18 +173,14 @@
 </div>
 <script src="script.js"></script>
 <script type="text/javascript">
-    // Inicializar EmailJS con tu User ID
+    // Inicializar EmailJS 
     emailjs.init('eNxWZ4qH5D6z_YoaK');
-
     // Enviar correos
     const form = document.getElementById('form');
     const btn = document.getElementById('button');
-    console.log(form);
-    console.log(btn);
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       btn.value = 'Enviando...';
-      console.log("estoy adentro");
       console.log(btn.value);
       const serviceID = 'default_service';
       const templateID = 'template_hnfqzrh';
@@ -192,7 +188,6 @@
       emailjs.sendForm(serviceID, templateID, this)
         .then(function(response) {
           btn.value = 'Enviar';
-          console.log("estoy adentro 2");
           alert('Mensaje enviado correctamente!');
         }, function(error) {
           btn.value = 'Enviar';
