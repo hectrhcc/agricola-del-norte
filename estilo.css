@@ -674,7 +674,7 @@ height:13.1rem;
     .rrss{
         position: relative;
         top:0.2rem;
-        right:5rem;
+        right:3rem;
     }
     .contenedor-galeria{
             max-width:97%;
@@ -814,6 +814,10 @@ width:66%;
 }
 /*Desktop*/
 @media (min-width:1600px){
+.navegar{ 
+min-width:98%;
+    }
+
 
 .entidades{
 font-size: x-large;
@@ -832,11 +836,7 @@ width:66%;
     width:69%;
     
 }
-.navegar{
-    position: relative;
-    left:2rem;
-    max-width:70%;
-}
+
 }
 
 @media (min-width:1220px){
