@@ -222,7 +222,9 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 .cliente{
 width:73%;
 display: inline;
+
 margin-left: 0.2rem;
+
 }
 
 .titulos-galeria{
@@ -502,6 +504,9 @@ nav{
 @media(min-width:580px){
     .closemovil{
         display: none;
+    }
+    .cliente{
+        height:24rem ;
     }
 }
 
@@ -802,7 +807,7 @@ width:66%;
     width:76%;
 }
 .navegar{
-    margin:0 16rem;
+    margin:0 13rem;
 }
 .red{
     position: relative;
