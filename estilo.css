@@ -997,7 +997,7 @@ width:70%;
     }
 
     .iny, .hyst, .obje, .pys, .conta, .rs, .bod{
-        background-color:beige!important ;
+        background-color:#fff!important ;
         color:#0e5d2f;
         border: none;
         border-radius: 0;
