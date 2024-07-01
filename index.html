@@ -173,28 +173,6 @@
 </div>
 </div>
 <script src="script.js"></script>
-<script type="text/javascript">
-    // Inicializar EmailJS 
-    emailjs.init('eNxWZ4qH5D6z_YoaK');
-    // Enviar correos
-    const form = document.getElementById('form');
-    const btn = document.getElementById('button');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      btn.value = 'Enviando...';
-      console.log(btn.value);
-      const serviceID = 'default_service';
-      const templateID = 'template_hnfqzrh';
 
-      emailjs.sendForm(serviceID, templateID, this)
-        .then(function(response) {
-          btn.value = 'Enviar';
-          alert('Mensaje enviado correctamente!');
-        }, function(error) {
-          btn.value = 'Enviar';
-          alert('Error al enviar el mensaje. Error: ' + JSON.stringify(error));
-        });
-    });
-  </script>
 </body>
 </html>
