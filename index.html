@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/Logo.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
-    <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -17,162 +17,329 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <title>Agrícola del Norte</title>
+    <title>Agrícola del Norte S.A</title>
 </head>
-<body> 
-    <div class="fp">
-    <div class="cacho flex flex-col" >
-        <img src="hamburguesa.png" id="hamburguesa" class="hamburguesa">
-    <header class="flex justify-center items-center  w-full"> 
-        <div class="flex items-center"> <!-- Contenedor arriba -->
-            <img src="logo.png" class="logo flex items-center justify-center top-0 h-auto "/><!-- Logo -->
-        </div>         
-    </header>
-    <h2 class="title relative inset-2 text-green-600 lg:hidden font-bold mt-0 p-0 flex items-center justify-center max-md:text-2xl sm:text-3xl   ">AGRICOLA DEL NORTE S.A</h2><!-- Título -->        
-        <h1 class="title w-full z-10 mb-0 text-center text-green-600 text-5xl  font-bold  max-md:hidden sm:hidden lg:block ">AGRICOLA DEL NORTE S.A.</h1><!-- Título -->        
-        <img src="x-regular-24.png" class="closemovil lg:hidden sm:hidden" id="closemovil">
-<nav id="navmovil" class=" navegar mt-2  flex  lg:w-11/12 items-center max-md:w-11/12 max-md:mx-auto sm:mt-4 sm:w-full " >
-    
-    <ul class="ul movil flex  text-gray-600 font-semibold flex-row ">
-    <div  class="iny lg:py-3 max-md:py-2 flex items-center border border-solid border-gray-400 "><li class="in max-md:ml-3 max-md:mr-3 ml-5 mr-5 "><a href="./index.html"   >INICIO</a></li></div>
-    <div  class="hyst lg:py-3 max-md:py-2  flex items-center border border-solid border-gray-400"><li class="hi max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="./historia.html" >HISTORIA</a></li></div>
-    <div class="obje lg:py-3 max-md:py-2  flex items-center border border-solid border-gray-400"><li class="ob max-md:ml-3 max-md:mr-3 ml-5 mr-5  "><a href="./objetivos.html" >OBJETIVOS</a></li></div>
-    <div class="pys lg:py-3  flex items-center  border-solid border-gray-400"><li class="prod max-md:ml-3 max-md:mr-3 ml-5 mr-5   "><a href="./productosyservicios.html" >PRODUCTOS & SERVICIOS</a></li></div>
-    <div class="conta lg:py-3 max-md:py-2  flex items-center border border-solid border-gray-400"><li class="co max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="http://agricola-del-norte.vercel.app/index.html#contacto">CONTACTO</a></li></div>
-    <div  class="rs lg:py-3 flex items-center border border-solid border-gray-400"><li class="red max-md:ml-3 max-md:mr-3 ml-5 mr-5"><a href="https://web.facebook.com/pages/AGRICOLA-DEL-NORTE-SA/203789526390496"  target="_blank">RED SOCIAL</a></li></div>
-    <div  class="bod lg:py-3 flex items-center border border-solid border-gray-400"><li class="warehouse ml-3  mr-5 "><a href="./bodega.html" >BODEGA</a></li></div>
-</ul>
-</nav>  
-</div>
-</div>
-<div class="fondo">
-    <main  id="main-content">
-    <section id="inicio" >
-        <div  class="container">
-            <div class="cliente">
-                <div class="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item ">   
-                            <img src="./images/5.jpg" alt="Slide 1" class="w-full min-h-full">
-                             </div>
-                        <div class="carousel-item">
-                            
-                            <img src="./images/4.jpg" alt="Slide 2" class="w-full min-h-full">
-                        </div>
-                        <div class="carousel-item">
-                            
-                            <img src="./images/19.jpg" alt="Slide 3" class="w-full min-h-full">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/23.jpg" alt="Slide 4" class="w-full min-h-full">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/20.jpg" alt="Slide 5" class="w-full min-h-full">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/8.jpg" alt="Slide 1" class="w-full min-h-full">
-                        </div>
-                    </div>
-                    </div>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+        <img src="images/Logo.jpg" class="imglogo"/>
+         </div> 
+        <div class="navegacion" id="navegacion">
+            <ul class="ul">
+                <li class="li"><a href="#inicio" class="cargar-contenido">INICIO</a></li>
+                <li class="li"><a href="#historia" class="cargar-contenido">HISTORIA</a></li>
+                <li class="li"><a href="#objetivos" class="cargar-contenido">OBJETIVOS</a></li>
+                <li class="li"><a href="#productosyservicios" class="cargar-contenido">PRODUCTOS & SERVICIOS</a></li>
+                <li class="li"><a href="#bodega" class="cargar-contenido">BODEGA</a></li>
+                <li class="li"><a href="#contacto">CONTACTO</a></li>
+                <li class="li"><a href="https://web.facebook.com/pages/AGRICOLA-DEL-NORTE-SA/203789526390496" target="_blank">RED SOCIAL</a></li>
+            </ul>
+        </div>
+        <div class="navmovil" id="hamburguesa">
+            <div class="menu-toggle ">
+              <i></i>
+              </div>
             </div>
-        <div class="entidades"> <h1 class="font-bold text-green-500 sm:text-xxs max-md:text-xs lg:text-xl ">Sitios de interés</h1>
-            <a href="https://www.conadi.gob.cl/" target="_blank"><img src="conadi.png" class="logo1"></a>
-            <a href="https://www.sag.gob.cl/" target="_blank"><img src="sag.png" class="logo2"></a>
-            <a href="https://www.indap.gob.cl/" target="_blank"><img src="indap.png" class="logo3"></a>
-            <a href="https://minagri.gob.cl/region-de-arica-y-parinacota/" target="_blank"><img src="agri.png" class="logo4 relative left-2"></a>
-        </div>  
-      </div> 
-    </section>
-    <section class="bienvenida">
-        <div class="bienvenida-move">
-        <h1 class="block mt-9 mb-2 text-center text-green-600 font-bold sm:text-4xl max-md:text-3xl lg:text-4xl ">AGRICOLA DEL NORTE</h1>
-        <p class="mt-8 mb-8 text-justify mx-auto w-7/12 text-center sm:text-xl max-md:text-xs max-md:w-3/4 lg:text-xl">Le damos la bienvenida a nuestro sitio web, donde nos comprometemos a proporcionar una información completa sobre nuestra empresa, incluyendo los valles que representamos, así como una amplia gama de productos y servicios. Nuestro enfoque se centra en fortalecer todas las áreas de la unidad productiva, desde lo técnico hasta lo humano y comercial, asegurando así un desarrollo sólido y sostenible en el sector agrícola.</p>
+    </nav>
+</header>
+<main>
+<section  id="inicio">
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="./images/4.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./images/27.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./images/19.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-4" 
+            name="slide" aria-hidden="true" hidden="" >
+            <div class="slide-item">
+            <img src="./images/24.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-5" 
+            name="slide" aria-hidden="true" hidden="" >
+            <div class="slide-item">
+            <img src="./images/20.jpg">
+            </div>
+            <label for="slide-5" class="slide-control prev control-1">‹</label>
+            <label for="slide-4" class="slide-control next control-3">›</label>
+            <label for="slide-3" class="slide-control prev control-4">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-5" class="slide-control next control-4">›</label>
+            <label for="slide-4" class="slide-control prev control-5">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-5">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-4" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-5" class="slide-circulo">•</label>
+                </li>
+            </ol>
         </div>
-    </section>
-    <section class=gallery id="galeria">
-        <h1 class="block mt-9 mb-2 text-center text-white font-bold sm:text-3xl max-md:text-2xl lg:text-3xl ">NUESTRAS ÁREAS DE TRABAJO</h1>
-<div class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" src="">
-</div>
-            <div class="fotos-move  mx-auto pt-8 pb-6 overflow-y-hidden"> 
-                <div class="contenedor-galeria max-md:flex max-md:flex-col max-md:mx-auto max-md:items-center">
-                     
-                    <div ><span class="titulos-galeria ">Venta de verduras </span>
-                    <img src="./images/7.jpg" alt="" class=" img-galeria" >
-                    </div>  
-                    <div ><span class="titulos-galeria ">Patio Principal </span>
-                        <img src="./images/24.jpg" alt="" class="img-galeria"  />
-                        </div> 
-                    <div ><span class="titulos-galeria ">Patio Bodega </span>
-                    <img src="./images/9.jpg" alt="" class=" img-galeria" >
-                    </div> 
-                    </div>
-            </div>     
-        </section>
-    <section class="contact">
-        <div class="border-b border-gray-400 mb-6"></div>
-        <h1 class="block mt-8 text-center text-green-600 font-bold lg:text-2xl max-md:text-2xl sm:text-3xl "  id="contacto">CONTACTO</h1>
-        <div class="contenedor">
-        <div class="contacto">
-        <form id="form">
-        <label class="block mb-2 text-black " for="nombre">Nombre <span class="text-blue-700 ml-1">*</span>
-        </label>
-        <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombre mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
-        <p id="pf1" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label for="telefono" class="block mb-2 text-black ">Teléfono <span class="text-blue-700 ml-1">*</span>
-        </label>
-        <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefono mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
-        <p id="pf2" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label for="correo" class="block mb-2 text-black max-md:w-full ">E-mail <span class="text-blue-700 ml-1">*</span>
-        </label>
-        <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correo mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
-        <p id="pf3" class="text-left mb-4  text-Red hidden">Por favor ingresar una dirección de correo válido</p>
-        <p id="pf4" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label for="asunto" class="block mb-2 text-black ">Asunto <span class="text-blue-700 ml-1">*</span>
-        </label>
-        <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asunto mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required>
-        <p id="pf5" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <label for="mensaje" class="block mb-2 text-black ">Mensaje <span class="text-blue-700 ml-1">*</span>
-        </label>
-        <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="msj mb-2 rounded border border-gray-400 border-solid border-3 block bg-white" required></textarea>
-        <p id="pf6" class="text-left mb-4  mt-2 text-Red hidden">Este campo es requerido</p>
-        <input id="button" type="submit" value="Enviar" class="botonform"/>
-        </form>
-        </div>
-        <div id="map" class="mapa"></div>
     </div>
+</section>
+<section id="historia">
+    <h1 class="titulo" >RESEÑA HISTÓRICA</h1>
+        <p class="parrafo">Agrícola del Norte S.A. es una  empresa Ariqueña, fundada el 28 de Diciembre del año 1989, por los medianos y pequeños agricultores de todo los valles de la XV Región. Es una a la vanguardia como una alternativa más para el desarrollo y progreso de los agricultores de la zona y la ciudad; aprovechando sus fortalezas de más de 400 accionistas que se dan las mismas oportunidades de una agricultura futurista y progresiva mediante la tecnificación de los diversos sistemas de riego.</p>
+         <h1 class="postitulo">SALA DE VENTAS</h1>
+         
+        <p class="parrafo ">Ofrece a sus asociados y agricultores una amplia gama de artículos para sistemas de riego tecnificado, desde motobombas y filtros de discos, hasta goteros de la mejor calidad, así mismo encontrara fertilizantes, pesticidas e insumos en general de las mejores clases y precios convenientes, además de nuestra asistencia técnica para usted con visitas a terreno y seguimiento productivo.</p>
+        <div class="divimagen"><img src="./images/9.jpg" class="imagenes"> </div>
+        
+        <h1 class="postitulo">CENTRO DE TRANSACCIÓN AGRÍCOLA</h1>
+        <p class="parrafo">En el terminal del agro, los agricultores venden al por mayor, productos agrícolas que provienen de los distintos valles de la XV  región, abastecen entre otros, a Iquique, Calama, Antofagasta y en forma permanente al resto del país todo el año. En tiempo de inverno abastecen la zona centro y sur de nuestro país. Los productos de los agricultores de esta zona, abastecen además  en los mismos periodos a Buenos Aires, Mendoza, Argentina.- agrícola del norte tiene un terminal, exclusivamente para los mayoristas con capacidad para 1200 agricultores.</p>
+         
+        <p class="parrafo">En su registro más alta la capacidad de 600 agricultores, permitiendo el ingreso de camiones internacionales provenientes del Perú, Bolivia y en el futuro próximo de Brasil. Al servicio de ellos están dispuestos cámaras, galpones y un patio vehicular de 4 hectáreas de terrenos. Se trabaja en forma intensiva en los días lunes, miércoles, viernes y sábado, los otros días restantes en menor escala. Tanto los productores, como los restantes en menor escala. Tanto los productores, como los intermediarios, realicen su negocio en un ambiente transparente y de confianza mutua, donde los precios son fijados por el libre juego de la oferta y la demanda.</p>
+        <div class="divimagen"><img src="./images/22.jpg" class="imagenes "> </div>
+        <h1 class="postitulo">CENTRO DE TRANSFERENCIA</h1>
+        
+        <p class="parrafo ">Nuevo proyecto que se incorpora con más de 5 años prestando servicios de control fitosanitarios, balanza de pesaje de camiones, servicios higiénicos y otros servicios que en el futuro se irán adicionando.- Actualmente está funcionando un galpón que le permitirá la revisión y el certificado fitosanitario indispensable para la exportación e importación hacia los países de Perú y Bolivia.- Además en dichos terrenos se pueden incorporar otros servicios.</p> 
+        <div class="divimagen"> <img src="./images/5.jpg" class=" imagenes "> </div>
+        
+        <h1 class="postitulo">VALLES QUE REPRESENTAMOS.</h1>
+        <p class="parrafo">Azapa – Lluta – Chaca- Camarones – Codpa- Putre – Socorama – Lupica – Timar – Ticnamar – Chapiquiña – Belen – Camiña – Chiapa – Pica – Miñi – Miñi – Esquiña – Pachica – Jaiña.</p>
+</section>
+<section id="objetivos">
+    <h1  class="titulo">OBJETIVOS ESPECÍFICOS:</h1>
+    <ul>
+    <li class="parrafo"> Comercializar, distribuir y representar toda clase de productos insumos agrícolas y alimenticios.</li> 
+    <li class="parrafo"> Orientar la producción de los pequeños agricultores  a una dirección de rubros más interesantes con criterios de rentabilidad y requerimientos de mercado.</li>
+    <li class="parrafo"> Bajo este objetivo se buscara representar a otros centros agrícolas del país y/o internacional para hacerse cargo de sus requerimientos.</li>
+    <li class="parrafo "> Comercializar, distribuir y representar toda la clase de productos insumos agrícolas y alimenticios.</li>
+    <li class="parrafo "> Prestar servicios de asistencia técnica.</li>
+    <li class="parrafo "> Importar y exportar toda la clase de productos.</li>
+    <li class="parrafo"> Operar a través de zona franca de Iquique y centros de exportación.
+    </li>
+    </ul>
+</section>
+<section class=gallery id="galeria">
+    <h1 class="tituloinfo">NUESTRAS ÁREAS DE TRABAJO</h1>
+    <div> 
+        <div class="contenedor-galeria ">
+            <div ><span class="titulos-galeria ">Patio de Ventas </span>
+            <img src="./images/7.jpg" alt="" class=" img-galeria" >
+            </div>  
+            <div ><span class="titulos-galeria ">Patio Principal </span>
+                <img src="./images/24.jpg" alt="" class="img-galeria"  />
+                </div> 
+            <div ><span class="titulos-galeria ">Patio Bodega </span>
+            <img src="./images/9.jpg" alt="" class=" img-galeria" >
+            </div> 
+            </div>
+    </div>     
     </section>
-    </main>
+    <section id="productosyservicios">
+        <h1 class="titulo">PRODUCTOS Y SERVICIOS</h1>
+        <h2 class="titulo titulo2">NUESTRA SALA DE VENTAS DE INSUMOS AGRÍCOLAS<br/>OFRECE LOS SIGUIENTES PRODUCTOS:</h2>
+        <div class="listacontenedor">
+            <ul class="lista1">
+                <li class="parrafo"> Semillas.</li>
+                <li class="parrafo"> Riego tecnificado.</li>
+                <li class="parrafo"> Malla antiafidos.</li>
+                <li class="parrafo"> Fitting (tubos pvc).</li>
+                <li class="parrafo"> Asesorías técnicas.</li>
+                <li class="parrafo"> Rollos de cintas de riego.</li>
+                <li class="parrafo"> Malla Rachel, plásticos mulch, etc.</li>
+                <li class="parrafo"> Bombas de agua y repuestos.</li>
+            </ul>
+            <ul class="lista2">
+                <li class="parrafo"> Equipamiento de riego y accesorios.</li>
+                <li class="parrafo"> Herramientas y accesorios agrícolas.</li>
+                <li class="parrafo"> Plásticos para estanques e invernaderos.</li>
+                <li class="parrafo"> Productos Agroquímicos (insecticidas, Fungicidas, acaricidas, otros).</li>
+                <li class="parrafo"> Nutrición Vegetal (fertilizantes, bioestimulantes, abono foliares, otros).</li>
+            </ul>
+        </div>
 
-<footer class="text-white ">
-    <div class="flex lg:flex-row flex-wrap items-center justify-center p-4 sm:flex-col max-md:flex-col">
-    <div class="hora text-center sm:mb-8 max-md:mb-8 lg:mt-8">
-        <h2 class="text-lg">Horario de atención:</h2>
-        <p>Lunes a Domingo:</p>
-        <p>Mañana/tarde de 07:00 a 18:00</p>
-        <p>VENTAS: 58-2-220525 </p>
-        <p>Av. Manuel Castillo Ibaceta #3689 - Arica</p>
+<div class="contenedor-galeria ">
+    <div ><span class="titulos-galeria ">Mallas raschel  </span>
+        <img src="./images/8.jpg" alt="" class=" img-galeria" >
     </div>
-    <div class="contlogo max-md:mb-8 block mx-auto"> <div><img src="logo-texto.png" alt="logo con info de la empresa" class="logo-abajo"></div> 
-    <div class="flex justify-center items-center rrss"> 
-        <a href="https://web.facebook.com/pages/AGRICOLA-DEL-NORTE-SA/203789526390496" target="_blank" class="fb">
-            <img src="facebook.png" alt="Facebook">
-        </a>
-        <a href="tel:58-2-244485" class="fono">
-            <img src="telefono.png" alt="Phone">
-        </a>
-        <a href="mailto:agronort@gmail.com" class="email">
-            <img src="enviar-correo.png" alt="Email">
-        </a>
+    <div> <span class="titulos-galeria ">Agroquímicos</span>    
+    <img src="./images/18.jpg" alt="" class=" img-galeria">
     </div>
+    <div><span class="titulos-galeria ">Tubos PVC</span>
+    <img src="./images/13.jpg" alt="" class="img-galeria" >  
+    </div> 
+
     </div>
+
+</section>
+<section id="bodega">
+    <h1 class="titulo">BODEGA</h1>
+    <p  class="parrafo"> Estimado cliente, comerciante, socio y público en general:<br/><br/>
+    En nuestro establecimiento nos preocupamos que, en su visita su bienestar y experiencia sea segura. Por ello, es que a contar de Marzo del Año 2024 ha empezado a regir las siguientes disposiciones y medidas preventivas que hemos implementado para garantizar su seguridad.<br/><br/>
+    Su conocimiento y adopción de estas, son fundamentales para su bienestar y protección:</p>
+    <div class="divbodega"><img src="./images/Iconos_y_medidas.png" class="imgbodega"></div>
+    <p  class="parrafo">Dispuesto lo anterior, y en virtud al resguardo de la seguridad de las personas, la empresa se reservará el derecho de admisión a quienes contravengan las disposiciones. Además, se informa la empresa no se hará responsable ante daños, extravíos y robos.<br/><br/>
+        Atte.<br/><br/>
+        Directorio<br/>
+        Agrícola del Norte S.A.<br/>
+        Fecha Publicación: martes, 27 de febrero de 2024</p><br/>
+        <div class="contenedor-galeria ">
+        <div ><span class="titulos-galeria ">Bodega </span>
+        <img src="./images/9.jpg" alt="" class=" img-galeria" >
+        </div>
+    <div> <span class="titulos-galeria ">Fertilizantes</span>    
+        <img src="./images/15.jpg" alt="" class=" img-galeria">
     </div>
-    <div class="text-center mt-1 pb-2 max-md:pb-6 sm:pb-8 ">© Agrícola del Norte S.A. Todos los derechos reservados.</div>    
+    <div><span class="titulos-galeria ">Plasticos</span>
+        <img src="./images/10.jpg" alt="" class="img-galeria" >  
+    </div>       
+        </div> 
+</section>
+<section class="entidades-seccion" >
+    <h1 class="Sitios">Sitios de interés</h1>
+    <div class="entidades"> 
+        <div class="diventidad"><a href="https://www.conadi.gob.cl/" target="_blank" ><img src="./images/conadi.png" class="logo1"></a></div>
+        <div class="diventidad"><a href="https://www.sag.gob.cl/" target="_blank" ><img src="./images/sag.png" class="logo2"></a></div>
+        <div class="diventidad"><a href="https://www.indap.gob.cl/" target="_blank" ><img src="./images/indap.png" class="logo3"></a></div>
+        <div class="diventidad"><a href="https://minagri.gob.cl/region-de-arica-y-parinacota/" target="_blank"><img src="./images/agri.jpg" class="logo4"></a></div>
+    </div>  
+    </section>
+<section class="seccion-contacto">
+    <h1 id="contacto">CONTACTO</h1>   
+    <div class="contenedor-contacto"> 
+        <div class="rangohorario">
+            <div class="interaccion">
+            <p class="p1">¿Quieres hacernos alguna pregunta?</p>
+            <p class="p2">Rellena nuestro formulario de contacto y resolveremos todas tu dudas.</p>
+            </div>
+       </div>  
+        <div class="formulario">
+            <form id="form">
+            <div class="lg">
+            <label class="nombrelabel" for="nombre">Nombre: <span class="asterisco">*</span>
+            </label>
+            <div class="pp">
+            <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombreinput" required>
+            <p id="pf1" >Este campo es requerido</p>
+            </div>
+            <label for="telefono" class="telefonolabel">Teléfono: <span class="asterisco">*</span>
+            </label>
+            <div class="pp">
+            <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefonoinput" required>
+            <p id="pf2">Este campo es requerido</p>
+            </div>
+            </div>
+            <div class="lg">
+            <label for="correo" class="correolabel">E-mail: <span class="asterisco">*</span>
+            </label>
+            <div class="pp2">
+            <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correoinput" required>
+            <p id="pf3">Ingrese correo válido</p>
+            <p id="pf4">Este campo es requerido</p>
+            </div>
+            <label for="asunto" class="asuntolabel">Asunto: <span class="asterisco">*</span>
+            </label>
+            <div class="pp3">
+            <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asuntoinput" required>
+            <p id="pf5">Este campo es requerido</p>
+            </div>
+            </div>
+            <label for="mensaje" class="mensajelabel">Mensaje: <span class="asterisco">*</span>
+            </label>
+            <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="mensajeinput" required></textarea>
+            <p id="pf6">Este campo es requerido</p>
+            <input id="button" type="submit" value="Enviar" class="botonform"/>
+            </form>     
+        </div> 
+
+       
+    <div >
+    </section>
+<section>
+    <div id="map" class="mapa" ></div>
+</section>
+</main>
+<footer>
+    <div class="contenedor-footer">
+        <div class="div-logo"> 
+            <img src="./images/logo-transparente.png" alt="logo de la empresa" class="logo-footer">    
+            <p class="titulo-footer">AGRÍCOLA DEL NORTE S.A</p> 
+        </div>    
+        <div class="horario">
+            <div class="pueblos">
+             <p>Azapa - Lluta - Camarones - Codpa </p>   
+             <p>Chaca - Belén - Copaquilla - Socoroma</p>
+             <p>Tignamar - Saxamar - Lupica</p>
+             <p>Provincia de Parinacota</p>
+            </div>
+            <p>Av. Manuel Castillo Ibaceta #3689 </p>
+            <p>Arica - XV Región Chile</p>
+        </div>
+        <div >
+            <ul class="ul-footer">
+            <li>
+            <a href="#inicio" class="cargar-contenido a-footer" ><img src="./images/home.png" class="inifoot"> Inicio</a></li>
+            <li><a href="#historia" class="cargar-contenido a-footer"><img src="./images/history.png" class="histfoot"> Historia</a></li>
+            <li><a href="#objetivos" class="cargar-contenido a-footer"><img src="./images/target_goal.png" class="objfoot"> Objetivos</a></li>
+            <li><a href="#productosyservicios" class="cargar-contenido a-footer"><img src="./images/prod.png" class="prodfoot"> Productos & Servicios</a></li>
+            <li><a href="#bodega" class="cargar-contenido a-footer"><img src="./images/warehouse.png" class="bodegafoot"> Bodega</a></li>
+            <li><a href="#contacto" class="a-footer"><img src="./images/user.png" class="contactofoot"> Contacto</a></li>
+            <li><a href="https://web.facebook.com/pages/AGRICOLA-DEL-NORTE-SA/203789526390496" class="a-footer" target="_blank"><img src="./images/facebook.png" class="redfoot"> Red social</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rrss-footer"> 
+        <a 
+        href="https://web.facebook.com/agricoladelnortesa" 
+        target="_blank" class="" ><img src="./images/facebook.png" class="fb"></a>
+        <a href="mailto:agronort@gmail.com" class="" ><img src="./images/email.png" class="email"></a>
+        <a href="tel:58-2-244485" class=""><img src="./images/ring-phone.png" class="fono"></a>
+    </div>  
+    <div class="fin-footer">&copy;  Agricola del Norte S.A. Todos los derechos reservados.</div>    
 </footer>
-</div>
-</div>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
+    <script src="contacto.js"></script>
+    <script src="basico.js"></script>
+    <script type="text/javascript">
+        // Inicializar EmailJS 
+        emailjs.init('eNxWZ4qH5D6z_YoaK');
+        // Enviar correos
+        const form = document.getElementById('form');
+        const btn = document.getElementById('button');
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          btn.value = 'Enviando...';
+          console.log(btn.value);
+          const serviceID = 'default_service';
+          const templateID = 'template_hnfqzrh';
+    
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(function(response) {
+              btn.value = 'Enviar';
+              alert('Mensaje enviado!\nGracias por completar el formulario. ¡Nos pondremos en contacto pronto!');
+            }, function(error) {
+              btn.value = 'Enviar';
+              alert('Error al enviar el mensaje. Error: ' + JSON.stringify(error));
+            });
+            // Validación de campos aquí...
+        });
+      </script>
 </body>
 </html>
