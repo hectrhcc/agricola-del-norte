@@ -44,13 +44,13 @@ autoPlay();
 nextBtn.addEventListener('click', () => {
   changeSlide();
   clearInterval(autoPlay);
-  autoPlay();  
+  
 });
 
 prevBtn.addEventListener('click', () => {  
   changeSlide();
   clearInterval(autoPlay);
-  autoPlay();
+  
 });
 
 });
