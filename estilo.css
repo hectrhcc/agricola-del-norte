@@ -803,7 +803,7 @@ right:0.rem;
   .slide-inner {
     position: relative;
     overflow: hidden;
-    width:100%;
+    width:50%;
     margin: 0 auto;
     height:100%;
     padding-top:8rem;
@@ -972,7 +972,6 @@ top:57%;
  font-size: x-large;
 }
 .entidades{
-
   margin: 0 auto;
    }
 .logo1 , .logo2, .logo3 {
@@ -1032,11 +1031,4 @@ width: 43%;
     width: 60%;
     margin: 0 auto;
   }
-
-
 }
-
-
-
-
-
