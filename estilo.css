@@ -39,7 +39,9 @@
     font-size: xx-large;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
   }
   .superparrafo{
     margin: 0 auto;
