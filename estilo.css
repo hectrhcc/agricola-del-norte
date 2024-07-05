@@ -834,7 +834,7 @@ right:0.rem;
   .slide-inner {
     position: relative;
     overflow: hidden;
-    width:100%;
+    width:60%;
     margin: 0 auto;
     max-height:100vh;
     padding-top:8rem;
