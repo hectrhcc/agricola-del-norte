@@ -27,6 +27,28 @@
   background: linear-gradient(transparent,#79A53E );
   border-radius:4rem;
   }
+  .supertitulo{
+    margin-top:2rem;
+    font-size: 220%;
+    color:#022D0B;
+    text-align: center;
+    font-weight: 700;
+  }
+  .supertitulo2{
+    color:#50891A;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .superparrafo{
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    width: 80%;
+    color: #3D3D3D;
+    padding-bottom: 1rem;
+  }
   nav{
     display: flex;
     flex-direction: row;
@@ -669,7 +691,16 @@ right:0.rem;
   
 }
 @media (min-width:768px){
-  
+  .supertitulo{
+    font-size: 250%;
+  }
+    .supertitulo2{
+      font-size: 220%
+    }
+    .superparrafo{
+      font-size: large;
+      width: 70%;
+    }
   footer{
 
     padding-top: 1rem;
@@ -803,9 +834,9 @@ right:0.rem;
   .slide-inner {
     position: relative;
     overflow: hidden;
-    width:50%;
+    width:100%;
     margin: 0 auto;
-    height:100%;
+    max-height:100vh;
     padding-top:8rem;
 }
 .slide-control {
@@ -972,6 +1003,7 @@ top:57%;
  font-size: x-large;
 }
 .entidades{
+
   margin: 0 auto;
    }
 .logo1 , .logo2, .logo3 {
@@ -1031,4 +1063,21 @@ width: 43%;
     width: 60%;
     margin: 0 auto;
   }
+  .supertitulo{
+    font-size: 260%;
+  }
+    .supertitulo2{
+      font-size: 230%
+    }
+    .superparrafo{
+      font-size:larger;
+      width:50%;
+    }
+
+
 }
+
+
+
+
+
