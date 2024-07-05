@@ -39,7 +39,7 @@
     font-size: xx-large;
     text-align: center;
     font-weight: 700;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     width: 80%;
     margin: 0 auto;
   }
@@ -697,8 +697,10 @@ right:0.rem;
     font-size: 250%;
   }
     .supertitulo2{
-      font-size: 220%
+      font-size: 220%;
+      padding-bottom: 1.4rem;
     }
+    
     .superparrafo{
       font-size: large;
       width: 70%;
@@ -1069,7 +1071,8 @@ width: 43%;
     font-size: 260%;
   }
     .supertitulo2{
-      font-size: 230%
+      font-size: 230%;
+      padding-bottom:1.4rem;
     }
     .superparrafo{
       font-size:larger;
