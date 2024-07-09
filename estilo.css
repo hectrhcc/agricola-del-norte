@@ -1106,6 +1106,13 @@ width: 43%;
 
 }
 
+@media (min-width:1280px){
+  .logo{
+   position: relative;
+   left:2.5rem;
+  }
+ }
+
 @media (min-width:1600px){
  .logo{
   position: relative;
@@ -1116,6 +1123,9 @@ width: 43%;
   .logo{
     position: relative;
     left:22rem;
+  }
+  .slide-inner {
+  height: 73vh;
   }
 }
 
