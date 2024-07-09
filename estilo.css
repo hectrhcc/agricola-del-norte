@@ -838,9 +838,9 @@ right:0.rem;
   .slide-inner {
     position: relative;
     overflow: hidden;
-    width:60%;
+    width:100%;
     margin: 0 auto;
-    max-height:100vh;
+    max-height:50vh;
     padding-top:8rem;
 }
 .slide-control {
