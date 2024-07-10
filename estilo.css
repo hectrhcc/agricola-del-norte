@@ -692,7 +692,7 @@ animation: wspAnimation 3s ease;
   justify-content: flex-end;
 }
 
-@media (min-width:320px){
+@media (min-width:320px) {
 #contacto{
   padding: 1.3rem;
   padding-bottom: 0.1rem;
@@ -724,7 +724,16 @@ animation: wspAnimation 3s ease;
   top:49rem;
   animation: wspAnimation 3s ease;
   }
+}
 
+@media (min-width:320px) and (min-height:480px){
+  .imgwsp{
+  
+    left:18rem;
+    width:3.2rem;
+    top:28.5rem;
+    animation: wspAnimation 3s ease;
+    }
 
 }
 
