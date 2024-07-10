@@ -726,17 +726,6 @@ animation: wspAnimation 3s ease;
   }
 }
 
-@media (min-width:320px) and (min-height:480px){
-  .imgwsp{
-  
-    left:18rem;
-    width:3.2rem;
-    top:28.5rem;
-    animation: wspAnimation 3s ease;
-    }
-
-}
-
 @media (min-width:375px){
 .imglogo{
   position: relative;
@@ -762,7 +751,7 @@ animation: wspAnimation 3s ease;
 .imgwsp{
   left:19rem;
   width:3.7rem;
-  top:46rem;
+  top:36rem;
   animation: wspAnimation 3s ease;
   }
 }
