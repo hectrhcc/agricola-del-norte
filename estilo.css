@@ -1205,6 +1205,7 @@ height:9rem;
     animation: wspAnimation 3s ease;
     }
 }
+
 @media (min-width:1280px){
 .logo{
  position: relative;
@@ -1220,6 +1221,24 @@ height:9rem;
 
 }
 
+@media (min-width:1280px) and (min-height:802px){
+  .imgwsp{
+    animation: wspAnimation 3s ease;
+    position: fixed;
+    left:72.6rem;
+    width:4rem;
+    top:43.5rem;
+    }
+}
+@media (min-width:1280px) and (min-height:900px){
+  .imgwsp{
+    animation: wspAnimation 3s ease;
+    position: fixed;
+    left:72.6rem;
+    width:4rem;
+    top:49.5rem;
+    }
+}
 @media (min-width:1440px) and (min-height:900px){
   .imgwsp{
     animation: wspAnimation 3s ease;
@@ -1236,7 +1255,7 @@ height:9rem;
   }
 
 }
-@media (min-width:1600px){
+@media (min-width:1600px) and (min-height:992px){
 .logo{
 position: relative;
 left:12rem;
@@ -1245,7 +1264,7 @@ left:12rem;
   animation: wspAnimation 3s ease;
   left:91.6rem;
   width:4.8rem;
-  top:60rem;
+  top:55rem;
   }
 }
 @media (min-width:1920px){
