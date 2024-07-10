@@ -717,6 +717,13 @@ animation: wspAnimation 3s ease;
   width:18rem;
 }
 
+.imgwsp{
+  
+  left:18rem;
+  width:3.7rem;
+  top:49rem;
+  animation: wspAnimation 3s ease;
+  }
 
 
 }
@@ -742,7 +749,15 @@ animation: wspAnimation 3s ease;
   left:1rem;
   top:1rem;
 }
+
+.imgwsp{
+  left:19rem;
+  width:3.7rem;
+  top:46rem;
+  animation: wspAnimation 3s ease;
+  }
 }
+
 @media (min-width:390px){
 .menu-toggle {
   left:21.4rem;
