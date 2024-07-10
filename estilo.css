@@ -10,11 +10,13 @@
 
 html {
   box-sizing: border-box; 
+  /*scroll-behavior:unset; sin desplazamiento*/
   scroll-behavior: smooth;
 }
 body{
   font-family: 'Karla', sans-serif;
   overflow-x: hidden;
+  transition: transform 3s ease-in-out;
 }
 /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
@@ -101,6 +103,19 @@ header{
   transform: translateY(0%);
   }
 }
+
+@keyframes scrollAnimation {
+  from {
+    transform: translateY(-50px); 
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 .menu-toggle {
   height: 1rem;
   position: absolute;
@@ -643,6 +658,10 @@ right:0.rem;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
        -1px 0px 2px rgba(255, 255, 255, 0);
 }
+
+#inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{ 
+  animation: scrollAnimation 5s ease;
+}
 @media (min-width:320px){
 #contacto{
   padding: 1.3rem;
@@ -846,6 +865,9 @@ margin:1rem;
 #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
 scroll-margin-top:9rem;
 }
+
+
+
 .slide-inner {
   position: relative;
   overflow: hidden;

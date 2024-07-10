@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => { 
-//Hamburguesa para la version movil              
+document.addEventListener('DOMContentLoaded',  function() {
+
+  //Hamburguesa para la version movil              
 let navegacion=document.getElementById('navegacion');
 let hamburguesa = document.getElementById('hamburguesa');
 
@@ -52,5 +53,6 @@ prevBtn.addEventListener('click', () => {
   clearInterval(autoPlay);
   
 });
+
 
 });
