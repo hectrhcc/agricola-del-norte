@@ -711,6 +711,7 @@ right:0.rem;
 .logo{
   position: relative;
   left:1rem;
+  top:1rem;
 }
 }
 @media (min-width:390px){
@@ -818,6 +819,7 @@ flex-direction: row;
 .logo{
   position: relative;
   left:2rem;
+  top:1rem;
 }
 
 .logo1 , .logo2, .logo4 {
@@ -872,8 +874,6 @@ margin:1rem;
 scroll-margin-top:9rem;
 }
 
-
-
 .slide-inner {
   
   overflow: hidden;
@@ -909,7 +909,7 @@ header{
 }
 .logo{
   position: relative;
-  top:-0.3rem;
+  top:-1rem;
   left:5rem;
 }
 
