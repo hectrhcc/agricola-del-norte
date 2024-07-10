@@ -1294,4 +1294,20 @@ left:12rem;
 
 }
 
+@media (min-width:1920px) and (min-height:950px){
+  .imgwsp{
+    left:111rem;
+    top:52rem;
+    }
 
+  }
+
+  @media (min-width:1920px) and (min-height:1080px){
+    .imgwsp{
+      left:111rem;
+      width:5rem;
+      top:59rem;
+      }
+  
+    
+    }
