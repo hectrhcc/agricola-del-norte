@@ -857,9 +857,12 @@ margin:1rem;
 .titulo2{
   font-size: larger;
 }
+
+.navegacion{
+  padding-left:2.5rem;
 }
 
-
+}
 
 @media (min-width:1024px){
 #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
