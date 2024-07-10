@@ -113,6 +113,16 @@ header{
     opacity: 1;
   }
 }
+@keyframes wspAnimation {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform:scale(1);
+    opacity: 1;
+  }
+}
 
 
 .menu-toggle {
@@ -668,6 +678,20 @@ right:0.rem;
 #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{ 
   animation: scrollAnimation 5s ease;
 }
+.imgwsp{
+width:6rem;
+position: fixed;
+top:47rem;
+left:70rem;
+z-index: 9;
+animation: wspAnimation 3s ease;
+}
+
+.fixwsp{
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media (min-width:320px){
 #contacto{
   padding: 1.3rem;
@@ -722,6 +746,14 @@ right:0.rem;
 @media (min-width:390px){
 .menu-toggle {
   left:21.4rem;
+}
+
+.imgwsp{
+position:fixed;
+left:18rem;
+width:3.7rem;
+top:47rem;
+animation: wspAnimation 3s ease;
 }
 
 }
@@ -872,6 +904,12 @@ margin:1rem;
   padding-left:2.5rem;
 }
 
+.imgwsp{
+  animation: wspAnimation 3s ease;
+  left:39rem;
+  width:4.8rem;
+  top:53rem;
+  }
 }
 
 @media (min-width:1024px){
@@ -879,6 +917,12 @@ margin:1rem;
 scroll-margin-top:9rem;
 }
 
+.imgwsp{
+  left:83rem;
+  width:4.8rem;
+  top:50rem;
+  animation: wspAnimation 3s ease;
+  }
 .slide-inner {
   overflow: hidden;
   width:100%;
@@ -1151,24 +1195,70 @@ height:9rem;
 
 }
 
+@media (min-width:1100px){
+  .imgwsp{
+    position: fixed;
+    left:72.6rem;
+    width:3.7rem;
+    top:29rem;
+    z-index: 10;
+    animation: wspAnimation 3s ease;
+    }
+}
 @media (min-width:1280px){
 .logo{
  position: relative;
  left:2.5rem;
+ 
 }
+.imgwsp{
+  animation: wspAnimation 3s ease;
+  left:72.6rem;
+  width:4rem;
+  top:49rem;
+  }
+
 }
 
+@media (min-width:1440px) and (min-height:900px){
+  .imgwsp{
+    animation: wspAnimation 3s ease;
+    position: fixed;
+    left:82rem;
+    width:4.8rem;
+    top:49rem;
+    }
+}
+
+@media (min-width:1440px) and (min-height:1080px){
+  .imgwsp{
+    top:60.5rem;
+  }
+
+}
 @media (min-width:1600px){
 .logo{
 position: relative;
 left:12rem;
 }
+.imgwsp{
+  animation: wspAnimation 3s ease;
+  left:91.6rem;
+  width:4.8rem;
+  top:60rem;
+  }
 }
 @media (min-width:1920px){
 .logo{
   position: relative;
   left:22rem;
 }
+.imgwsp{
+  animation: wspAnimation 3s ease;
+  left:111rem;
+  width:4.8rem;
+  top:60rem;
+  }
 
 }
 
