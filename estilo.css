@@ -403,6 +403,7 @@ text-decoration: none;
 .mapa{
   height:87vh;
   width: 100%;
+  z-index: 1;
 }
 .inifoot, .histfoot ,.objfoot ,.prodfoot ,.contactofoot ,.bodegafoot {
 width: 15px;
@@ -419,7 +420,6 @@ top:0.12rem;
 padding: 1rem;
 background-color: #fff;
 }
-/*media querys*/
 
 .interaccion{
   display: block;
