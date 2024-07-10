@@ -82,7 +82,7 @@ header{
   position: absolute;
   width: 100%;
   top:9.5rem;
-  padding-left: 1rem;
+  padding-left:2.2rem;
   animation: aparecerDesdeAr 1s forwards;
   z-index:1;
 }
