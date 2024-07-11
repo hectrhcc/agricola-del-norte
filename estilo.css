@@ -1316,7 +1316,7 @@ left:12rem;
 
 }
 
-@media (min-width:1920px) and (min-height:950px){
+@media (min-width:1920px) and (min-height:850px){
   .imgwsp{
     left:111rem;
     top:52rem;
