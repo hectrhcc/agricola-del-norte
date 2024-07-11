@@ -688,6 +688,9 @@ left:70rem;
 z-index: 9;
 animation: wspAnimation 3s ease;
 }
+.imgwsp:hover{
+  transform: scale(1.1);
+}
 
 .fixwsp{
   display: flex;
