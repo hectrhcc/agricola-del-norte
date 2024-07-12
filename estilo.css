@@ -1256,7 +1256,7 @@ height:9rem;
     }
       .lista2{
         position: relative;
-        bottom:3.8rem;
+        bottom:0.8rem;
         left:2rem;
         width:100%;
       } 
@@ -1300,7 +1300,7 @@ height:9rem;
     top:49.5rem;
     }
 }
-@media (min-width:1440px) and (min-height:900px){
+@media (min-width:1440px) and (min-height:800px){
   .imgwsp{
     animation: wspAnimation 3s ease;
     position: fixed;
@@ -1311,12 +1311,14 @@ height:9rem;
     .lista1{
       width:80%;
       position: relative;
-     
+      right:-4rem;
     }
    
       .lista2{
         position: relative;
-        bottom:3rem;
+        bottom:0rem;
+        left:-4rem;
+        width:60%;
       } 
   
 }
@@ -1337,7 +1339,7 @@ height:9rem;
  
     .lista2{
       position: relative;
-      bottom:3rem;
+      bottom:0rem;
       left:-7rem;
       width:50%;
     } 
@@ -1375,7 +1377,7 @@ left:12rem;
   
     .lista2{
       position: relative;
-      bottom:3rem;
+      bottom:0rem;
       left:-8rem;
       width:38%;
     } 
