@@ -717,6 +717,10 @@ animation: wspAnimation 3s ease;
     animation-fill-mode: both;
     animation-direction:forwards;
     }
+
+.parrafin{
+  text-align: center;
+}
 @media (min-width:320px) {
 #contacto{
   padding: 1.3rem;
@@ -1242,6 +1246,23 @@ height:9rem;
     z-index: 10;
     animation: wspAnimation 3s ease;
     }
+    .lista1{
+      width:80%;
+      position: relative;
+      right:-1rem;
+    }
+    .lista1 .parrafo{
+      width:80%;
+    }
+      .lista2{
+        position: relative;
+        bottom:3.8rem;
+        left:2rem;
+        width:100%;
+      } 
+    .lista2 .parrafo{
+      width:95%;
+    }
 }
 
 @media (min-width:1280px){
@@ -1256,6 +1277,8 @@ height:9rem;
   width:4rem;
   top:49rem;
   }
+
+
 
 }
 
@@ -1285,12 +1308,39 @@ height:9rem;
     width:4.8rem;
     top:49rem;
     }
+    .lista1{
+      width:80%;
+      position: relative;
+     
+    }
+   
+      .lista2{
+        position: relative;
+        bottom:3rem;
+      } 
+  
 }
 
 @media (min-width:1440px) and (min-height:1080px){
   .imgwsp{
     top:60.5rem;
   }
+
+}
+
+@media (min-width:1600px) {
+  .lista1{
+    width:80%;
+    position: relative;
+    right:-4.5rem;
+  }
+ 
+    .lista2{
+      position: relative;
+      bottom:3rem;
+      left:-7rem;
+      width:50%;
+    } 
 
 }
 @media (min-width:1600px) and (min-height:992px){
@@ -1304,7 +1354,9 @@ left:12rem;
   width:4.8rem;
   top:55rem;
   }
+
 }
+
 @media (min-width:1920px){
 .logo{
   position: relative;
@@ -1316,6 +1368,18 @@ left:12rem;
   width:4.8rem;
   top:60rem;
   }
+  .lista1{
+    position: relative;
+    right:-11rem;
+  }
+  
+    .lista2{
+      position: relative;
+      bottom:3rem;
+      left:-8rem;
+      width:38%;
+    } 
+  
 
 }
 
