@@ -84,7 +84,8 @@ header{
   width: 100%;
   top:9.5rem;
   padding-left:2.2rem;
-  animation: aparecerDesdeAr 1s forwards;
+  animation: aparecerConAltura 1s forwards;
+  transform-origin: top;
   z-index:1;
 }
 @keyframes emergeLogo {
@@ -96,12 +97,13 @@ header{
   }
   }
 
-@keyframes aparecerDesdeAr {
+@keyframes aparecerConAltura {
   from {
-  transform: translateY(-100%); 
+    transform: scaleY(0); 
+    visibility: visible;
   }   
   to {
-  transform: translateY(0%);
+    transform: scaleY(1);
   }
 }
 
@@ -128,72 +130,21 @@ header{
 
 
 .menu-toggle {
-  height: 1rem;
   position: absolute;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
   cursor: pointer;
-  right:2rem;
-  width:2rem;
   z-index:2;
-  
 }
-.menu-toggle:hover {
-  color: fff;
-}
-.menu-toggle i,
 
-.menu-toggle i:after,
-.menu-toggle i:before {
-  display: block;
-  position: absolute;
-  height:0.35rem;
-  width:2.6rem;
-  
-  background:#222;
-  border-radius: 2px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  
-}
-.menu-toggle i:after,
-.menu-toggle i:before {
-  content: '';
-}
-.menu-toggle i:after {
-  top: -32px;
-}
-.menu-toggle i:before {
-  top: -16px;
-}
-.menu-toggle i {
-  top: 32px;
-}
-.menu-toggle.open i:after {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: -22px;
-}
-.menu-toggle.open i:before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: -22px;
+.tam{
+  position:absolute;
+	top:5px;
+	left:-14px;
+	background:#fff;
+	width: 40px;
+	height: 40px;
+	cursor:pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 6px rgba(0,0,0,.5); 
 }
 
 .seccion-contacto{
@@ -677,7 +628,7 @@ right:0.rem;
        -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
-#inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{ 
+#inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega, nav{ 
   animation: scrollAnimation 5s ease;
 }
 .imgwsp{
@@ -797,6 +748,7 @@ width:3.7rem;
 top:47rem;
 animation: wspAnimation 3s ease;
 }
+
 
 }
 @media (min-width:768px){
